@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+  font-family: 'Roboto';
+  src: url('../utils/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../utils/fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../utils/fonts/Roboto-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+} */
+
+/* Hiding default slick-carousel arrows */
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+
+
+@keyframes slowBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.slow-bounce {
+  animation: slowBounce 3s ease-in-out infinite; /* Adjust 3s for speed */
+}
+
+
+@keyframes slow-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.bounce-on-hover {
+  transition: transform 0.6s ease; /* Slow-motion effect */
+}
+
+.bounce-on-hover:hover {
+  transform: scale(1.2); /* Increase the size on hover */
+}
+
+
+.slick-list {
+  padding: 0 10px; /* Adjust padding as needed */
+}
+
+.slick-slide > div {
+  padding: 0 10px; /* This will add padding on both sides of each card */
+  /* width: 150%; */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+    --boxinsetshadow:inset 0px 10px 15px  rgba(255, 255, 255, 0.253),
+    inset 0px -10px 15px  rgba(255, 255, 255, 0.144);
+    --boxinsetmshadow:inset 0px 10px 18px  rgba(255, 255, 255, 0.226),
+    inset 0px -10px 10px  rgba(255, 255, 255, 0.144);
+    --boxinsetrshadow:inset 0px 5px 5px  rgba(255, 255, 255, 0.151),
+    inset 0px -5px 5px  rgba(255, 255, 255, 0.096);
+    --BshadW:inset 0px 10px 15px rgba(255, 255, 255, 0.486),
+    inset 0px -10px 15px rgba(0, 0, 0, 0.432);
+  }
+}
+.ani-hidden{
+  opacity: 0;
+  filter:blur(10px);
+}
+
+.right-hide{
+  translate: 100px 0;
+}
+.right-hidee{
+  translate: -100px 0;
+}
+.left-hide{
+  translate: -100px 0;
+}
+.left-hidee{
+  translate: 100px 0;
+}
+.top-hide{
+  translate: 0 -100px;
+}
+.bottom-hide{
+  translate: 0 100px;
+}
+.ani-show{
+  opacity: 1;
+  filter:blur(0px);
+  translate: 0 0;
+  transform: translate(0,0);
+}
+*{
+  transition: opacity 0.5s ease-in-out,
+   filter 0.5s ease-in-out,
+   translate 0.5s ease-in-out,
+   transform 0.5s ease-in-out;
+}
+body {
+  width: 100vw;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+    background: white;
+    color: black;
+  overflow-x: hidden;
+  font-family: Montserrat Alternates;
+}
+*::selection{
+  background-color: rgba(0, 255, 255, 0.164);
+}
+::-webkit-scrollbar{
+  width: 12px;
+  height: 30px;
+  border-radius: 5px;
+  /* background-color: rgba(0, 0, 0, 0.096); */
+}
+::-webkit-scrollbar-thumb{
+  background-color:rgba(47, 54, 75, 0.808);
+  border-radius: 3px;
+  filter: blur(10px);
+  /* border: 3px solid rgb(194, 194, 194) ; */
+}
+
+
+
+.NONE{
+  display: none;
+}
