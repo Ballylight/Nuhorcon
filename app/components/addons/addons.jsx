@@ -1,7 +1,6 @@
 "use client"
 import style from "./addons.module.css"
 import React, { useEffect, useRef, useState } from "react"
-import { frame } from "framer-motion"
 import tooltiptri from "./assets/tooltiptri.png"
 import Image from "next/image"
 const indexId = genId("b")

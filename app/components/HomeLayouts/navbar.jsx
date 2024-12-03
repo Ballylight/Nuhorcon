@@ -1,8 +1,8 @@
 "use client";
 import style from "./navbar.module.css";
 import { mergeText } from "../addons/addons"; 
-// import logo from "@/components/HomeLayouts/Assets/images/logo.png"
-// import nextw from "./assets/nextw.png";
+import logo from "./assets/images/logo.png"
+import nextw from "./assets/nextw.png";
 import { Roboto } from "next/font/google";
 import Image from "next/image";
 import { usePathname } from "next/navigation"; 
@@ -29,7 +29,7 @@ function Notification({ message, link }) {
       <CLink ani={false} href={link} className={style.notecontent}>
         {message}{" "}
         <div className={style.notegoto}>
-          <Image src={nextw} className={style.nextw} alt="logo" />
+          {<Image src={nextw} className={style.nextw} alt="logo" />}
         </div>
       </CLink>
     </div>
@@ -39,10 +39,10 @@ export default function NavbarMain() {
   const pathname = usePathname();
   return (
     <div className={mergeText(style.nb, "navbarBackgroundClass")}>
-      <Notification
+      {/* <Notification
         message="Limited Time Offer🌟: Save Up To ₦xxx On SCOLARITÉ  Plans Until December 31, 2200"
         link="/pricingplans"
-      />
+      /> */}
       <NavBar /> {/* navattr ={[navbar,setNavbar]} isattr = {[isNavOpened,setIsNavOpened]} onscroll = {handleScroll} */}
     </div>
   );

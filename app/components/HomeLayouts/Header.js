@@ -3,7 +3,7 @@ import NavbarMain from "./navbar";
 import style from "./navbar.module.css";
 import { useEffect } from "react";
 // import { mergeText } from "@/app/add";
-import { isPageExempt } from "../addons/addons";
+import { isPageExempt, mergeText } from "../addons/addons";
 import { usePathname } from "next/navigation";
 // import React, { useEffect } from 'react'
 

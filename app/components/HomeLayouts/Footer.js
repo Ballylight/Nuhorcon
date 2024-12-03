@@ -1,8 +1,9 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Logo from "../HomeLayouts/Assets/images/logo.png";
+import Logo from "./assets/images/logo.png";
 import Link from "next/link";
 import Image from "next/image";
+import { isPageExempt } from "../addons/addons";
 
 
 
@@ -57,7 +58,7 @@ export default function Footer() {
               {/* "Go to Top" */}
               <div className="flex items-center text-white text-sm cursor-pointer">
                 <span>Go to Top</span>
-                <MdOutlineArrowCircleUp size={20} />
+                {/* <MdOutlineArrowCircleUp size={20} /> */}
               </div>
             </div>
   
@@ -66,15 +67,15 @@ export default function Footer() {
               {/* Contact Details */}
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="flex items-center gap-2">
-                  <HiOutlineMail color="white" size={20} />
+                  {/* <HiOutlineMail color="white" size={20} /> */}
                   <p className="text-white">hello@squareup.com</p>
                 </div>
                 <div className="flex items-center gap-2">
-                  <BsTelephone color="white" size={20} />
+                  {/* <BsTelephone color="white" size={20} /> */}
                   <p className="text-white">+91 91813 23 2309</p>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CiLocationOn color="white" size={20} />
+                  {/* <CiLocationOn color="white" size={20} /> */}
                   <p className="text-white">Somewhere in the World</p>
                 </div>
               </div>
