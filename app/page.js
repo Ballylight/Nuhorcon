@@ -1,21 +1,17 @@
-// import About from '@/components/Section/About/About';
-// import Analytic from '@/components/Section/Analytic/Analytic';
-// import Choose from '@/components/Section/Choose/Choose';
-// import Cta from './components/Section/Cta/Cta';
-// import Hero from '@/components/Section/Hero/Hero';
-// import Plan from '@/components/Section/Plan/Plan';
-// import Testimonial from '@/components/Section/Testimonial/Testimonial';
+import Hero from './components/Sections/Hero/Hero';
+import Blog from './components/Sections/Blog/Blog';
+import Cta from './components/Sections/Cta/Cta';
+import Testimonials from './components/Sections/Testimonials/Testimonials';
+import Features from './components/Sections/Features/Features'
 
-// export default function Home() {
-//   return (
-//     <div>
-//       <Hero />
-//      <About />
-//      <Choose />
-//      <Analytic />
-//      <Plan />
-//      <Testimonial />
-//      <Cta />
-//     </div>
-//   );
-// }
+export default function Home() {
+  return (
+    <div>
+      <Hero />
+      <Features />
+      <Blog />  
+      <Testimonials/>
+      <Cta />
+    </div>
+  );
+}
