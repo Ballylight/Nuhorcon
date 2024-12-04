@@ -1,9 +1,5 @@
 "use client";
-import dynamic from "next/dynamic";
-
-// Dynamically import Footer with SSR disabled
-const Footer = dynamic(() => import("./Footer"), { ssr: false });
-
+import Footer from "./Footer"
 export default function FooterWrapper() {
   return <Footer />;
 }
