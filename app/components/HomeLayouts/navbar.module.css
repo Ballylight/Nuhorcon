@@ -1,241 +1,99 @@
-
-.nb{
-    width: 100%;
-    /* position: fixed; */
-    top: 0;
-    z-index: 100;
-    background:rgba(47, 54, 75, 1);
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-.note{
-    display: grid;
-    place-items: center;
-    background:rgba(102, 112, 133, 1);
-    color:white;
-    width: 100%;
-    padding-block: 10px;
-    padding-inline: 30px;
-    transition: top 0.5s ease-in-out,
-    opacity 0.5s ease-in-out;
-    
-}
-.notecontent{
-    display: flex;
-    gap: 10px;
-    font-size: 12px;
-    align-items: center;
-    
-    
-
-}
-
-
-.nextw{
-    width: 20px;
-    object-fit:contain;
-}
 .navbar{
-    /* background-color: rgba(42, 48, 67, 1); */
-    max-width: 2000px;
-    padding-block: 15px;
-    padding-inline: 20px;
+    display: grid;
     width: 100%;
-    top: 0;
-    z-index: 100;
-    z-index: 100;
-    display: flex;
-   justify-content: center;
-
-}
-.header{
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    z-index: 10000;
-}
-
-.navinner{ 
-    width: 90%;
-
-}
-.navimage{
-    width: auto;
-    height: 60px;
-}
-
-.navtitletext{
-    font-family: 'Century';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #FFFFFF;
-
-}
-
-.navitem{
-    display: flex;
-    gap: 10px;
-}
-.navlinks{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
-
-.navauth{
-    border-radius: 20px;
-    padding: 5px 20px;
-    font-weight: bold;
-    color: black;
-   
-}
-.navauth1{
-    background-color: white;
-}
-.navatextlogin{
+    place-items: center;
+    padding-block: 13px;
+    background-color: rgba(79, 124, 112, 1);
     color: white;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
-/* .navatext{ */
-    /* background-clip: text; */
-    /* --gray:rgb(59, 59, 59); */
-    /* background: linear-gradient(90deg,var(--gray),black,black,var(--gray)); */
-    /* -webkit-background-clip: text; */
-    /* transition: background-position 0.3s ease-in-out; */
-/* } */
-/* .navlinks{ */
-/* } */
-.navlink{
-    color: rgba(255, 255, 255, 0.477);
-    font-size: 16px;
-}
-.navlink:hover{
-
-    color: rgba(255, 255, 255, 1);
-}
-.betweencenter{
+.navinner{
     display: flex;
+    width: 90%;
     justify-content: space-between;
     align-items: center;
+    transition: height 0.5s ease-in-out;
 }
+.logo{
+    width: 30px;
+    height: 30px;
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.links{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.linkbutton{
+    padding-block: 8px;
+    padding-inline: 15px;
+    background-color: black;
+    border-radius: 7px;
 
-.navmenuicon{
-    display: none;
-    position: relative;
+}
+.link{
+    color: rgba(255, 255, 255, 0.641);
+    transition: color 0.5s ease-in-out,
+    background-color 0.5s ease-in-out;
     cursor: pointer;
-    width: 40px;
-    flex-direction: column;
-    align-items: end;
-    gap: 8px;
-    transition: rotate 0.5s ease-in-out,gap 0.5s ease-in-out;
 }
-.navmenuvicon{
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    border-radius: 2px;
-    transition: all 0.5s ease-in-out,
-    /* height 0.5s ease-in-out, */
-    /* translate 0.5s ease-in-out, */
-    /* background-color 0.5s ease-in-out, */
-    /* opacity 0.5s ease-in-out; */
+.menubtn{
+    display: none;
+    padding-block: 7px;
+    padding-inline: 15px;
+    background-color: black;
+    border-radius: 7px;
+    cursor: pointer;
 }
-.nmi3{
-    width: 60%;
+.link:hover{
+    color: rgb(192, 225, 242);
 }
-.navlink.active{
-    color: white;
-}
-
-
-@media (max-width: 1100px) {
-    /* .navbar{ */
-        /* border-bottom-left-radius: 10px; */
-        /* border-bottom-right-radius: 10px; */
-    /* } */
-    /* .nb{
-        background:linear-gradient(180deg, #2F364B 0%, #262B3D 85.25%);
-        font-size: 10px;
-    } */
-    .navlinks{
-        flex-direction: column;
-        width: 100%;
-        gap: 20px;
-    }
+@media screen and (max-width: 1200px)  {
     .navinner{
-        grid-template-columns: 1fr;
-        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        height: 37px;
     }
-    .navmenuicon{
-        display: flex;
-        cursor: pointer;
-    }
-    
-    .naviconwrapper{
-        width: 100%;
-    }
-    .navres{
+    .links{
         flex-direction: column;
         width: 100%;
-        gap: 20px;
-        height: 0px;
-        overflow: hidden;
-        margin-top: 0 ;
-        transition: height 0.5s ease-in-out,margin-top 0.5s ease-in-out;
     }
-    .note{
-        margin: 10px;
-        width: 97%;
-        border-radius: 10px;
-        padding-block: 10px;
-    }
-    .navbar.navhidden  .navres{
-        height: 370px;
-        margin-top: 20px;
-    }
-    .navbar.navhidden  .navmenuicon{
-        rotate: 90deg;
-        gap: 0px;
-        
-    }
-    .navbar.navhidden  .navmenuvicon{
-        height: 5px;
-    }
-    .navbar.navhidden  .nmi3{
-        opacity: 0;
-
-    }
-    .navbar.navhidden  .nmi1{
-        rotate: -45deg;
-        translate: 0px 3px;
-
-    }
-    .navbar.navhidden  .nmi2{
-        rotate: 45deg;
-
-    }
-    
-    
-    .navlink{
+    .link{
         width: 100%;
         text-align: center;
-        padding-block: 6px;
-        border-radius: 5px;
-        background-color: rgba(191, 244, 249, 0.078);
+        padding-block: 10px;
+        background-color: rgba(240, 248, 255, 0.107);
+        border-radius: 8px;
     }
-    .navlink:hover{
-        color: rgba(191, 244, 249, 0.732);
-        background-color: rgba(191, 244, 249, 0.144);
+    .onmobile{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center ;
     }
-    .navlink.active{
-        color: rgba(191, 244, 249, 1);
-        background-color: rgba(191, 244, 249, 0.144);
+    .menubtn{
+        display: block;
     }
-} 
+    .navbar.showmenu .navinner{
+        height: 350px;
+    }
+    .link:hover{
+        background-color: rgba(205, 235, 246, 0.207);
+    }
+    .linkbutton{
+        background-color: black;
+        width: fit-content;
+        color: white;
+    }
+    .linkbutton:hover{
+        background-color: rgb(0, 19, 21);
+
+    }
+}

@@ -122,6 +122,8 @@
    transform 0.5s ease-in-out;
 }
 body {
+  margin: 0;
+  padding: 0;
   width: 100vw;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

@@ -41,6 +41,8 @@ import Header from "./components/HomeLayouts/Header"
 import { Roboto } from 'next/font/google';
 import { mergeText } from "./components/addons/addons";
 import FooterWrapper from "./components/HomeLayouts/FooterWrapper";
+import NavbarMain from "./components/HomeLayouts/navbar";
+
 const inter = Roboto({
   weight: ['300', '400', '500', '700', '900'],
   subsets: ['greek'],
@@ -63,7 +65,7 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
       </head>
       <body>
-        <Header />
+      <NavbarMain />
         <main className={inter.className}>{children}</main>
         <FooterWrapper />
       </body>
