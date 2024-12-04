@@ -1,0 +1,243 @@
+.container {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0 auto;
+    max-width: 1350px;
+    padding: 20px;
+}
+
+
+/* Header Section */
+.header {
+    background-color: #F6FBE9;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #E5F5BD;
+    /* Stroke effect */
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+/* Header Content Wrapper */
+.headerContent {
+    max-width: 1200px;
+    text-align: center;
+
+}
+
+/* Header Title (H1) */
+.headerTitle {
+    font-size: 2.5rem;
+    /* Large heading size */
+    color: #1A3129;
+    /* Dark green */
+    margin-bottom: 20px;
+    /* Spacing below the title */
+    font-weight: bold;
+    /* Emphasized text */
+    margin: 0;
+}
+
+/* Header Description (P) */
+.headerDescription {
+    font-size: 1rem;
+    /* Regular paragraph size */
+    line-height: 1.6;
+    /* Improved readability */
+    color: #333;
+    /* Neutral gray text color */
+    margin-bottom: 30px;
+    /* Spacing below the paragraph */
+    margin: 0;
+}
+
+/* Image Container */
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Header Image */
+.headerImage {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for visual appeal */
+}
+
+/* Story Section */
+.story {
+    margin: 40px 0;
+}
+
+.storyTitle {
+    font-size: 2.5rem;
+    color: #1A3129;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 100px;
+}
+
+.storyIntro {
+    text-align: center;
+    margin: 10px auto 30px auto;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+.storySection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.storyItem {
+    text-align: center;
+}
+
+.storyImage {
+    width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.storyItemTitle {
+    font-size: 1.5rem;
+    color: #1A3129;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 3.5px solid #5E8B7F;
+    /* Underline effect */
+    display: inline-block;
+    text-align: left;
+}
+
+.storyItemDescription {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+/* Achievements Section */
+.achievements {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.achievementsHeader {
+    margin-bottom: 30px;
+}
+
+.achievementsTitle {
+    font-size: 2rem;
+    color: #1A3129;
+    margin: 0;
+}
+
+.achievementsDescription {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px auto 30px auto;
+    max-width: 1200px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #F6FBE9;
+    border: 1px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cardIcon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.cardTitle {
+    font-size: 1.25rem;
+    color: #1A3129;
+    margin: 0;
+}
+
+.cardText {
+    font-size: 0.9rem;
+    color: #4d4d4d;
+    margin: 0;
+}
+
+
+/* Footer Section */
+   .footer {
+    background-color: #F6FBE9; /* Light background */
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-top: 70px;
+    border: 2px solid #E5F5BD;
+  }
+  
+  .footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footerText {
+    flex: 1;
+  }
+  
+  .footerHeading {
+    font-size: 1.9rem;
+    color: #2c5f2d;
+    margin: 0;
+  }
+  
+  .footerDescription {
+    font-size: 1rem;
+    color: #3a5f5d;
+    line-height: 1.6;
+    margin-right: 20px;
+    margin: 0;
+    max-width: 1000px;
+  }
+  
+  .footerButtonContainer {
+    flex-shrink: 0;
+  }
+  
+  .contactButton {
+    background-color: #3a5f5d;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
