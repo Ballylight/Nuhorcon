@@ -9,6 +9,10 @@
 export default function Home() {
   return (
     <div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       {/* <Hero />
      <About />
      <Choose />

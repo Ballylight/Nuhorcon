@@ -20,14 +20,16 @@ export default function Footer(props){
                     <Image src={logo} alt="logo" className={style.logo}></Image>
                     <div className={style.text}>Pngfitfam</div>
                 </div>
-                <div className={style.links}>
-                    <CLink className={style.link} >Home</CLink>
-                    <CLink className={style.link} >About</CLink>
-                    <CLink className={style.link} >Shop</CLink>
-                    <CLink className={style.link} >Blog</CLink>
-                    <CLink className={mergeText(style.link,style.linkbutton)} >Contact Us</CLink>
+                <div className={style.forcemaxwidth}>
+                    <div className={style.links}>
+                        <CLink className={style.link} >Home</CLink>
+                        <CLink className={style.link} >About</CLink>
+                        <CLink className={style.link} >Shop</CLink>
+                        <CLink className={style.link} >Blog</CLink>
+                        <CLink className={mergeText(style.link,style.linkbutton)} >Contact Us</CLink>
+                    </div>
                 </div>
-                <div></div>
+                {/* <div></div> */}
             </div>
             <div className={style.footerbut}>
                 <div className={style.footerbleft}>

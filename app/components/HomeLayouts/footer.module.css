@@ -30,18 +30,26 @@
 .links{
     color: white;
     gap: 10px;
-    /* max-width: 500px; */
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
+}
+.forcemaxwidth{
+    width: 50%;
+    max-width: 450px;
+
 }
 .link{
     display: inline-block;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    /* margin-left: 20px; */
+    
 }
 .footertop{
     display: flex;
     width: 98%;
     box-sizing: border-box;
     justify-content: space-between;
+    align-items: center;
 }
 .footerbut{
     color: white;
