@@ -51,8 +51,8 @@ const inter = Roboto({
 });
 
 export const metadata = {
-  title: "Scolarite",
-  description: "Empowering Your Educational Journey",
+  title: "PngFitFam",
+  description: "A Healthier LifeStyle",
 };
 
 export default function RootLayout({ children }) {
