@@ -1,0 +1,65 @@
+/* Achievements Section */
+.achievements {
+    margin: 0 auto;
+    width: 1350px;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+.achievementsHeader {
+    margin-bottom: 30px;
+}
+
+.achievementsTitle {
+    font-size: 2rem;
+    color: #1A3129;
+    margin: 0;
+}
+
+.achievementsDescription {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px auto 30px auto;
+    max-width: 1200px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #F6FBE9;
+    border: 1px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    border: 2px solid #E5F5BD;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cardIcon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.cardTitle {
+    font-size: 1.25rem;
+    color: #1A3129;
+    margin: 0;
+}
+
+.cardText {
+    font-size: 0.9rem;
+    color: #4d4d4d;
+    margin: 0;
+}

@@ -242,4 +242,295 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
+
+
+
+
+  /* Media Queries for different screen sizes */
+
+/* 1024px and below */
+@media (max-width: 1024px) {
+    .container {
+        padding: 15px;
+    }
+
+    .header {
+        padding: 30px 15px;
+    }
+
+    .headerTitle {
+        font-size: 2rem;
+    }
+
+    .headerDescription {
+        font-size: 0.9rem;
+    }
+
+    .storyTitle {
+        font-size: 2.2rem;
+    }
+
+    .storyIntro {
+        font-size: 1rem;
+    }
+
+    .storySection {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .storyItemTitle {
+        font-size: 1.3rem;
+    }
+
+    .achievementsTitle {
+        font-size: 1.8rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .cardTitle {
+        font-size: 1.1rem;
+    }
+
+    .cardText {
+        font-size: 0.85rem;
+    }
+
+    .footer {
+        padding: 30px 15px;
+    }
+
+    .footerHeading {
+        font-size: 1.6rem;
+    }
+
+    .footerDescription {
+        font-size: 0.9rem;
+    }
+
+    .contactButton {
+        font-size: 1rem;
+        padding: 12px 25px; /* Adjust button padding */
+        margin-top: 15px; /* Space between button and text */
+    }
+
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+    .header {
+        padding: 25px 10px;
+    }
+
+    .headerTitle {
+        font-size: 1.8rem;
+    }
+
+    .headerDescription {
+        font-size: 0.85rem;
+    }
+
+    .storyTitle {
+        font-size: 2rem;
+    }
+
+    .storyIntro {
+        font-size: 0.95rem;
+    }
+
+    .storySection {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .storyItemTitle {
+        font-size: 1.2rem;
+    }
+
+    .achievementsTitle {
+        font-size: 1.6rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 12px;
+    }
+
+    .cardTitle {
+        font-size: 1rem;
+    }
+
+    .cardText {
+        font-size: 0.8rem;
+    }
+
+    .footer {
+        padding: 25px 10px;
+    }
+
+    .footerHeading {
+        font-size: 1.4rem;
+    }
+
+    .footerDescription {
+        font-size: 0.85rem;
+    }
+
+    .contactButton {
+        font-size: 1rem;
+        padding: 10px 20px; /* Adjust button padding */
+        margin-top: 12px; /* Space between button and text */
+    }
+}
+
+/* 480px and below */
+@media (max-width: 480px) {
+    .header {
+        padding: 20px 8px;
+    }
+
+    .headerTitle {
+        font-size: 1.5rem;
+    }
+
+    .headerDescription {
+        font-size: 0.8rem;
+    }
+
+    .storyTitle {
+        font-size: 1.8rem;
+    }
+
+    .storyIntro {
+        font-size: 0.9rem;
+    }
+
+    .storySection {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .storyItemTitle {
+        font-size: 1rem;
+    }
+
+    .achievementsTitle {
+        font-size: 1.4rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .cardTitle {
+        font-size: 0.9rem;
+    }
+
+    .cardText {
+        font-size: 0.75rem;
+    }
+
+    .footer {
+        padding: 20px 8px;
+    }
+
+    .footerHeading {
+        font-size: 1.2rem;
+    }
+
+    .footerDescription {
+        font-size: 0.75rem;
+    }
+
+    .contactButton {
+        font-size: 0.9rem;
+        padding: 8px 18px; /* Adjust button padding */
+        margin-top: 10px; /* Space between button and text */
+    }
+}
+
+/* 360px and below */
+@media (max-width: 360px) {
+    .header {
+        padding: 15px 5px;
+    }
+
+    .headerTitle {
+        font-size: 1.3rem;
+    }
+
+    .headerDescription {
+        font-size: 0.75rem;
+    }
+
+    .storyTitle {
+        font-size: 1.5rem;
+    }
+
+    .storyIntro {
+        font-size: 0.8rem;
+    }
+
+    .storySection {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .storyItemTitle {
+        font-size: 0.9rem;
+    }
+
+    .achievementsTitle {
+        font-size: 1.2rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 8px;
+    }
+
+    .cardTitle {
+        font-size: 0.85rem;
+    }
+
+    .cardText {
+        font-size: 0.7rem;
+    }
+
+    .footer {
+        padding: 15px 5px;
+    }
+
+    .footerHeading {
+        font-size: 1rem;
+    }
+
+    .footerDescription {
+        font-size: 0.7rem;
+    }
+
+    .contactButton {
+        font-size: 0.9rem;
+        padding: 8px 15px; /* Adjust button padding */
+        margin-top: 8px; /* Space between button and text */
+    }
+}
+
   
