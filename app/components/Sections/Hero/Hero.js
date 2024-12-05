@@ -1,3 +1,4 @@
+
 import styles from './hero.module.css';
 
 const Hero = () => {
@@ -7,7 +8,7 @@ const Hero = () => {
         {/* Left Section: Image */}
         <div className={styles.imageContainer}>
           <img
-            src="/images/dr-ngozi-profile.png" // Replace this path with the actual image path
+            src="/images/dr-ngozi-profile.svg" // Replace this path with the actual image path
             alt="Dr. Ngozi Awai Imaga"
             className={styles.heroImage}
           />
@@ -15,14 +16,12 @@ const Hero = () => {
 
         {/* Right Section: Text Content */}
         <div className={styles.content}>
-          <h5 className={styles.subHeading}>Transform Your Health with</h5>
-          <h1 className={styles.heading}>Dr. Ngozi Awa Imaga PhD</h1>
+          <div className={styles.subHeadingContainer}>
+            <h5 className={styles.subHeading}>Transform Your Health with</h5>
+          </div>
+          <h1 className={styles.heading}>Professor Dr. Ngozi Awa Imaga, PhD</h1>
           <p className={styles.description}>
-            Meet Dr. Ngozi Awa Imaga PhD, a Professor of Biochemistry at the University of Lagos with over 50 scholarly publications. 
-            She founded PNggfitfam, a wellness program offering age-specific meal plans and fitness regimens. Through her “Healthy Meal Swaps Plan” 
-            and the PNggfitfam Masterclass series, Dr. Ngozi helps people achieve lasting weight loss without fad diets. Having personally lost 20kg, 
-            she now shares her expertise in her book “Weightloss Secrets.” Her research focuses on obesity, diabetes, and community health interventions. 
-            Join her journey to a healthier, fitter life!
+          Meet Professor Dr. Ngozi Awa Imaga, PhD, a Professor of Biochemistry at the University of Lagos with over 50 scholarly publications. She founded PNgfitfam, a wellness program offering age-specific meal plans and fitness regimens. Through her “Healthy Meal Swaps Plan” and the PNgfitfam Masterclass series, Dr. Ngozi helps people achieve lasting weight loss without fad diets. Having personally lost 20kg, she now shares her expertise in her book "Weightloss Secrets." Her research focuses on obesity, diabetes, and community health interventions. Join her journey to a healthier, fitter life!
           </p>
 
           {/* Buttons */}
@@ -34,7 +33,7 @@ const Hero = () => {
           {/* Customer Info */}
           <div className={styles.customerInfo}>
             <img
-              src="/images/happy-customers.png" // Replace this path with the actual image path
+              src="/images/happy-customers.svg" // Replace this path with the actual image path
               alt="Happy Customers"
               className={styles.customerImage}
             />
