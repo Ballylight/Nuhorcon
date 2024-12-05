@@ -5,6 +5,9 @@
     border-radius: 10px;
     margin-top: 70px;
     border: 2px solid #E5F5BD;
+    max-width: 1350px;
+    margin: 0 auto;
+    margin-bottom: 50px;
   }
   
   .footerContainer {
@@ -12,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
   }
   
   .footerText {

@@ -1,9 +1,10 @@
 import React from 'react'
+import styles from './features.module.css';
 
-export default function Features() {
+function Features() {
   return (
-    <div>
-      
-    </div>
+    <div>h3rbeh</div>
   )
 }
+
+export default Features
