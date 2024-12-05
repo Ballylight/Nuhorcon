@@ -1,0 +1,114 @@
+/* Container */
+.hero {
+    background-color: #f6fbe9; /* Light background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+  }
+  
+  /* Inner container for layout */
+  .container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  /* Left Section: Image */
+  .imageContainer {
+    flex: 1;
+  }
+  
+  .heroImage {
+    width: 100%;
+    max-width: 400px; /* Adjust for responsive layout */
+    border-radius: 10px;
+  }
+  
+  /* Right Section: Content */
+  .content {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .subHeading {
+    font-size: 1rem;
+    color: #3a5f5d;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    color: #2c5f2d;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #3a5f5d;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .viewBlogButton {
+    background-color: #3a5f5d;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .viewBlogButton:hover {
+    background-color: #2c5f2d;
+  }
+  
+  .contactButton {
+    background-color: #f6fbe9;
+    color: #3a5f5d;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: 2px solid #3a5f5d;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contactButton:hover {
+    background-color: #3a5f5d;
+    color: #fff;
+  }
+  
+  /* Customer Info */
+  .customerInfo {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .customerImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .customerText {
+    font-size: 1rem;
+    color: #2c5f2d;
+    font-weight: 600;
+  }
+  

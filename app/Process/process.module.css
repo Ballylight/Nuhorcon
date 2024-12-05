@@ -1,0 +1,203 @@
+.container {
+  padding: 20px;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+.header {
+  background-color: #F6FBE9;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #E5F5BD;
+  /* Stroke effect */
+  border-radius: 8px;
+  margin-top: 50px;
+}
+
+/* Header Content Wrapper */
+.headerContent {
+  max-width: 1200px;
+  text-align: center;
+
+}
+
+/* Header Title (H1) */
+.headerTitle {
+  font-size: 2.5rem;
+  /* Large heading size */
+  color: #1A3129;
+  /* Dark green */
+  margin-bottom: 20px;
+  /* Spacing below the title */
+  font-weight: bold;
+  /* Emphasized text */
+  margin: 0;
+}
+
+/* Header Description (P) */
+.headerDescription {
+  font-size: 1rem;
+  /* Regular paragraph size */
+  line-height: 1.6;
+  /* Improved readability */
+  color: #333;
+  /* Neutral gray text color */
+  margin-bottom: 30px;
+  /* Spacing below the paragraph */
+  margin: 0;
+}
+
+/* Image Container */
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Header Image */
+.headerImage {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for visual appeal */
+}
+
+/* How It Works Section */
+.howItWorksSection {
+  margin-top: 40px;
+}
+
+.sectionHeading {
+  font-size: 2rem;
+  text-align: center;
+  color: #1A3129;
+  margin-bottom: 20px;
+}
+
+.sectionDescription {
+  font-size: 1rem;
+  text-align: center;
+  color: #333;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+.stepsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 35px;
+  margin-top: 90px;
+  row-gap: 90px;
+}
+
+.stepCard {
+  position: relative;
+  background-color: #f6fbe9;
+  border: 2px solid #e5f5bd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  overflow: visible;
+}
+
+/* Number Background Styling */
+.numberBackground {
+  position: absolute;
+  font-size: 7rem;
+  font-weight: bold;
+  color: #1A3129;
+  top: 50%;
+  left: 50%;
+  transform: translate(-255%, -125%);
+  z-index: 0;
+  opacity: 0.1;
+}
+
+/* Card Content Styling */
+.cardContent {
+  position: relative;
+  z-index: 1;
+}
+
+/* Card Title Container */
+.cardTitleContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.cardIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  color: #2c5f2d;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.cardDescription {
+  font-size: 0.9rem;
+  color: #3a5f5d;
+  line-height: 1.5;
+}
+
+
+/* Footer Section */
+.footer {
+  background-color: #F6FBE9; /* Light background */
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  border: 2px solid #E5F5BD;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footerText {
+  flex: 1;
+}
+
+.footerHeading {
+  font-size: 1.9rem;
+  color: #2c5f2d;
+  margin: 0;
+}
+
+.footerDescription {
+  font-size: 1rem;
+  color: #3a5f5d;
+  line-height: 1.6;
+  margin-right: 20px;
+  margin: 0;
+  max-width: 1000px;
+}
+
+.footerButtonContainer {
+  flex-shrink: 0;
+}
+
+.contactButton {
+  background-color: #3a5f5d;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
