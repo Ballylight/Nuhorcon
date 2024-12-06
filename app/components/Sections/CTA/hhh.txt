@@ -7,8 +7,6 @@
   margin-bottom: 50px;
   border: 2px solid #E5F5BD;
   max-width: 1350px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .footerContainer {
@@ -59,7 +57,6 @@
   .footer {
     padding: 30px 15px;
     width: auto;
-    margin: 50px 20px;
   }
 
   .footerHeading {
@@ -80,17 +77,10 @@
 
 }
 
-@media (max-width: 1100px) {
-  .footer {
-    margin: 50px 20px;
-  }
-}
-
 /* 768px and below */
 @media (max-width: 768px) {
   .footer {
     padding: 25px 10px;
-    margin: 40px 20px;
   }
 
   .footerHeading {
@@ -114,7 +104,6 @@
 @media (max-width: 480px) {
   .footer {
     padding: 20px 8px;
-    margin: 30px 20px; /* Add more compact margins for small devices */
   }
 
   .footerHeading {
@@ -138,7 +127,6 @@
 @media (max-width: 360px) {
   .footer {
     padding: 15px 5px;
-    margin: 20px 19px; /* Tighter margins for very small devices */
   }
 
   .footerHeading {
