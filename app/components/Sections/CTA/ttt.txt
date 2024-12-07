@@ -1,0 +1,384 @@
+/* Media Queries */
+
+/* For screens <= 1240px */
+@media (max-width: 1240px) {
+  .container {
+    padding: 15px;
+    max-width: 1200px;
+  }
+
+  .header {
+    padding: 30px 15px;
+  }
+
+  .headerTitle {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+
+  .stepsContainer {
+    gap: 30px;
+    row-gap: 70px;
+  }
+
+  .cardTitle {
+    font-size: 1.1rem;
+  }
+
+  .cardDescription {
+    font-size: 0.85rem;
+  }
+
+  .numberBackground{
+    transform: translate(-226%, -124%);
+
+  }
+
+}
+
+/* For screens <= 1100px */
+@media (max-width: 1100px) {
+  .footerContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footerText {
+    margin-bottom: 20px;
+  }
+
+  .footerHeading {
+    font-size: 1.7rem;
+  }
+
+  .footerDescription {
+    font-size: 0.95rem;
+    max-width: 800px;
+  }
+
+  .contactButton {
+    padding: 8px 16px;
+    font-size: 0.95rem;
+  }
+
+  .numberBackground{
+    transform: translate(-203%, -124%);
+    
+  }
+}
+
+/* For screens <= 1024px */
+@media (max-width: 1024px) {
+  .headerContent {
+    text-align: left;
+  }
+
+  .headerTitle {
+    font-size: 2rem;
+  }
+
+  .headerDescription {
+    font-size: 0.95rem;
+  }
+
+  .stepsContainer {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 35px;
+  }
+
+  .numberBackground {
+    font-size: 6rem;
+    transform: translate(-250%, -120%);
+  }
+
+  .footerDescription {
+    font-size: 0.9rem;
+    max-width: 700px;
+  }
+
+  .numberBackground{
+    transform: translate(-220%, -140%);
+    
+  }
+}
+
+/* For screens <= 768px */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .headerTitle {
+    font-size: 1.8rem;
+  }
+
+  .stepsContainer {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+
+  .cardIcon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .cardTitle {
+    font-size: 1rem;
+  }
+
+  .cardDescription {
+    font-size: 0.85rem;
+  }
+
+  .footerContainer {
+    gap: 15px;
+  }
+
+  .footerHeading {
+    font-size: 1.5rem;
+  }
+
+  .contactButton {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .numberBackground{
+    transform: translate(-330%, -130%);
+    
+  }
+}
+
+/* For screens <= 480px */
+@media (max-width: 480px) {
+  .headerTitle {
+    font-size: 1.6rem;
+  }
+
+  .headerDescription {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .stepsContainer {
+    row-gap: 40px;
+  }
+
+  .numberBackground {
+    font-size: 5rem;
+    transform: translate(-240%, -115%);
+  }
+
+  .footerHeading {
+    font-size: 1.3rem;
+  }
+
+  .footerDescription {
+    font-size: 0.85rem;
+    max-width: 600px;
+  }
+
+  .contactButton {
+    font-size: 0.85rem;
+    padding: 6px 14px;
+  }
+
+  .numberBackground{
+    transform: translate(-220%, -146%);
+    
+  }
+}
+
+/* For screens <= 360px */
+@media (max-width: 360px) {
+  .headerTitle {
+    font-size: 1.4rem;
+  }
+
+  .headerDescription {
+    font-size: 0.8rem;
+  }
+
+  .numberBackground {
+    font-size: 4.5rem;
+    transform: translate(-220%, -110%);
+  }
+
+  .cardTitle {
+    font-size: 0.9rem;
+  }
+
+  .cardDescription {
+    font-size: 0.8rem;
+  }
+
+  .footerHeading {
+    font-size: 1.2rem;
+  }
+
+  .footerDescription {
+    font-size: 0.8rem;
+    max-width: 500px;
+  }
+
+  .contactButton {
+    font-size: 0.8rem;
+    padding: 5px 12px;
+  }
+
+  .numberBackground{
+    transform: translate(-196%, -164%);
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1024px and below */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 30px 15px;
+    width: auto;
+    margin: 50px 20px;
+  }
+
+  .footerHeading {
+    font-size: 1.6rem;
+  }
+
+  .footerDescription {
+    font-size: 0.9rem;
+  }
+
+  .contactButton {
+    font-size: 1rem;
+    padding: 12px 25px;
+    /* Adjust button padding */
+    margin-top: 15px;
+    /* Space between button and text */
+  }
+
+}
+
+@media (max-width: 1100px) {
+  .footer {
+    margin: 50px 20px;
+  }
+
+  .footerContainer{
+    padding: 25px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .footer {
+    margin: 50px 20px;
+  }
+
+  
+}
+
+@media (max-width: 1250px) {
+  .footer {
+    margin: 50px 20px;
+  }
+
+  .footerContainer{
+    padding: 25px;
+  }
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+  .footer {
+    padding: 25px 10px;
+    margin: 40px 20px;
+  }
+
+  .footerHeading {
+    font-size: 1.4rem;
+  }
+
+  .footerDescription {
+    font-size: 0.85rem;
+  }
+
+  .contactButton {
+    font-size: 1rem;
+    padding: 10px 20px;
+    /* Adjust button padding */
+    margin-top: 12px;
+    /* Space between button and text */
+  }
+}
+
+/* 480px and below */
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 8px;
+    margin: 30px 20px; /* Add more compact margins for small devices */
+  }
+
+  .footerHeading {
+    font-size: 1.2rem;
+  }
+
+  .footerDescription {
+    font-size: 0.75rem;
+  }
+
+  .contactButton {
+    font-size: 0.9rem;
+    padding: 8px 18px;
+    /* Adjust button padding */
+    margin-top: 10px;
+    /* Space between button and text */
+  }
+}
+
+/* 360px and below */
+@media (max-width: 360px) {
+  .footer {
+    padding: 15px 5px;
+    margin: 20px 19px; /* Tighter margins for very small devices */
+  }
+
+  .footerHeading {
+    font-size: 1rem;
+  }
+
+  .footerDescription {
+    font-size: 0.7rem;
+  }
+
+  .contactButton {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    /* Adjust button padding */
+    margin-top: 8px;
+    /* Space between button and text */
+  }
+}

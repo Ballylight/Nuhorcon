@@ -88,7 +88,7 @@
 }
 
 .viewBlogButton {
-  background-color: #3a5f5d;
+  background-color: #5E8B7F;
   color: white;
   font-size: 1rem;
   padding: 12px 24px;
@@ -104,7 +104,7 @@
   color: #3a5f5d;
   font-size: 1rem;
   padding: 12px 24px;
-  border: 2px solid #3a5f5d;
+  border: 2px solid #5E8B7F;
   border-radius: 8px;
   font-family: Urbanist;
   cursor: pointer;
