@@ -84,6 +84,28 @@
   .footer {
     margin: 50px 20px;
   }
+
+  .footerContainer{
+    padding: 25px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .footer {
+    margin: 50px 20px;
+  }
+
+  
+}
+
+@media (max-width: 1250px) {
+  .footer {
+    margin: 50px 20px;
+  }
+
+  .footerContainer{
+    padding: 25px;
+  }
 }
 
 /* 768px and below */
