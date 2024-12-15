@@ -2,6 +2,7 @@
   padding: 20px;
   max-width: 1350px;
   margin: 0 auto;
+  font-family: Urbanist;
 }
 
 /* Header Section */
@@ -111,7 +112,7 @@
   color: #1A3129;
   top: 50%;
   left: 50%;
-  transform: translate(-255%, -125%);
+  transform: translate(-290%, -125%);
   z-index: 0;
   opacity: 0.1;
 }

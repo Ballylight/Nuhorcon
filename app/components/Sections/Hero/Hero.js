@@ -19,9 +19,9 @@ const Hero = () => {
           <div className={styles.subHeadingContainer}>
             <h5 className={styles.subHeading}>Transform Your Health with</h5>
           </div>
-          <h1 className={styles.heading}>Dr. Ngozi Awa Imaga, PhD</h1>
+          <h1 className={styles.heading}>Prof. Ngozi Awa Imaga, PhD</h1>
           <p className={styles.description}>
-          Meet Professor Dr. Ngozi Awa Imaga, PhD, a Professor of Biochemistry at the University of Lagos with over 50 scholarly publications. She founded PNgfitfam, a wellness program offering age-specific meal plans and fitness regimens. Through her “Healthy Meal Swaps Plan” and the PNgfitfam Masterclass series, Dr. Ngozi helps people achieve lasting weight loss without fad diets. Having personally lost 20kg, she now shares her expertise in her book "Weightloss Secrets." Her research focuses on obesity, diabetes, and community health interventions. Join her journey to a healthier, fitter life!
+          Meet Ngozi Awa Imaga, a Professor of Nutritional & Pharmacological Biochemistry at the University of Lagos with over 50 scholarly publications. She founded PNgfitfam, a wellness program offering bespoke meal plans and fitness regimens. Through her “Healthy Meal Swaps Plan” and the PNgfitfam Masterclass series, Prof. Ngozi helps people achieve lasting weight loss without fad diets. Having personally lost 20kg, she now shares her expertise in her book "Weightloss Secrets." Her research focuses on obesity, diabetes, and community health interventions. Start your journey to a healthier and fitter life with PNgfitfam!
           </p>
 
           {/* Buttons */}

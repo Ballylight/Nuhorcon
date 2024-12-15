@@ -6,7 +6,7 @@ import logo from "./assets/images/logo.png";
 
 function Bleftc({icon,children}){
     return <Center className={style.bleftc}>
-        <Image src={icon} alt="" className={style.bleftcicon} srcset="" />
+        <Image src={icon} alt="" className={style.bleftcicon} srcSet="" />
         {children}
     </Center>
 }
