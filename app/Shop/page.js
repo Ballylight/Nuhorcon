@@ -1,4 +1,5 @@
-import React from "react";
+'use client';
+import React, { useState } from "react";
 import styles from "./shop.module.css";
 
 const Shop = () => {
@@ -11,7 +12,7 @@ const Shop = () => {
       price: "$39.00",
       salePrice: null,
       rating: 5,
-      imgSrc: "/images/product1.svg", // Replace with your image
+      imgSrc: "/images/product1.svg",
     },
     {
       id: 2,
@@ -65,10 +66,38 @@ const Shop = () => {
     },
   ];
 
+  const [currentPage, setCurrentPage] = useState(1);
+  const productsPerPage = 6;
+
+  const totalPages = Math.ceil(products.length / productsPerPage);
+
+  const handlePrevious = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+  const handleNext = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  const handleDotClick = (page) => {
+    setCurrentPage(page);
+  };
+
+  const displayedProducts = products.slice(
+    (currentPage - 1) * productsPerPage,
+    currentPage * productsPerPage
+  );
+
   return (
     <div className={styles.shopSection}>
       <div className={styles.headerContent}>
-        <h1 className={styles.headerTitle}>Shop Our Herbal Remedies and Wellness Products</h1>
+        <h1 className={styles.headerTitle}>
+          Shop Our Herbal Remedies and Wellness Products
+        </h1>
         <p className={styles.headerDescription}>
           Discover a range of natural herbal drinks and wellness products
           designed to support your health goals. From weight loss solutions to
@@ -79,14 +108,17 @@ const Shop = () => {
         </p>
       </div>
 
-
       <div className={styles.productsSection}>
-        <p className={styles.resultsText}>Showing 1-6 of 24 results</p>
+        <p className={styles.resultsText}>
+          Showing {displayedProducts.length} of {products.length} results
+        </p>
         <div className={styles.productList}>
-          {products.map((product) => (
+          {displayedProducts.map((product) => (
             <div key={product.id} className={styles.productCard}>
               <div className={styles.imageContainer}>
-                {product.salePrice && <span className={styles.saleBadge}>SALE</span>}
+                {product.salePrice && (
+                  <span className={styles.saleBadge}>SALE</span>
+                )}
                 <img src={product.imgSrc} alt={product.name} />
               </div>
               <div className={styles.productDetails}>
@@ -111,6 +143,53 @@ const Shop = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className={styles.navigationContainer}>
+        <button
+          className={styles.navButton}
+          onClick={handlePrevious}
+          disabled={currentPage === 1}
+        >
+          &lt;
+        </button>
+        {/* <div className={styles.dotsContainer}>
+          {[...Array(totalPages)].map((_, index) => (
+            <div
+              key={index}
+              className={
+                currentPage === index + 1
+                  ? styles.activeDot
+                  : styles.dot
+              }
+              onClick={() => handleDotClick(index + 1)}
+            >
+            </div>
+          ))}
+        </div> */}
+
+        <div className={styles.dotsContainer}>
+          {[...Array(totalPages)].map((_, index) => (
+            <div
+              key={index}
+              className={
+                currentPage === index + 1
+                  ? `${styles.dot} ${styles.activeDot}`
+                  : styles.dot
+              }
+              onClick={() => handleDotClick(index + 1)}
+            ></div>
+          ))}
+        </div>
+
+
+        <button
+          className={styles.navButton}
+          onClick={handleNext}
+          disabled={currentPage === totalPages}
+        >
+          &gt;
+        </button>
       </div>
     </div>
   );

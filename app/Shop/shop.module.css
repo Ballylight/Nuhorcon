@@ -6,25 +6,6 @@
     margin: 0 auto;
 }
 
-/* .heroSection {
-    background-color: #f9fdf1;
-    padding: 40px 20px;
-    text-align: center;
-    border-radius: 10px;
-    margin-bottom: 30px;
-  }
-  
-  .heroSection h1 {
-    font-size: 28px;
-    color: #1a3129;
-    margin-bottom: 10px;
-  }
-  
-  .heroSection p {
-    color: #333;
-    font-size: 15px;
-    line-height: 1.6;
-  } */
 
 
 /* Header Content Wrapper */
@@ -54,41 +35,28 @@
 .headerDescription {
     font-size: 1rem;
     line-height: 1.6;
-    color: #333;
+    color: #333333;
     margin-bottom: 30px;
     margin: 0;
 }
 
-/* Image Container */
-.imageContainer {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-/* Header Image */
-.headerImage {
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
 .resultsText {
-    color: #333333;
-    font-size: 17.1px;
+    color: #1A3129;
+    font-size: 17.5px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .productList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    margin-bottom: 50px;
 }
 
 .productCard {
-    background: #fff;
-    border: 1px solid #e5f5bd;
+    /* background: #fff; */
+    border: 2px solid #E5F5BD;
     border-radius: 10px;
     display: flex;
     padding: 20px;
@@ -106,44 +74,42 @@
 }
 
 .imageContainer img {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: auto;
     object-fit: contain;
     border-radius: 10px;
+    justify-content: center;
 }
 
 .saleBadge {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    background-color: #ff7a7a;
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 10px;
-    font-weight: bold;
-    border-radius: 5px;
+    display: none;
 }
 
 .productDetails {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 0;
 }
 
 .productDetails h3 {
-    font-size: 18px;
-    color: #1a3129;
-    margin: 0;
+    font-size: 22px;
+    color: #1A3129;
+    /* margin-top: 0%; */
+    margin-bottom: -2px;
 }
 
 .description {
-    font-size: 12px;
-    color: #666;
+    font-size: 16.5px;
+    color: #333333;
+    margin-top: 5px;
 }
 
 .priceSection {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
+    margin-top: -10px;
+
 }
 
 .salePrice {
@@ -157,16 +123,16 @@
 }
 
 .regularPrice {
-    color: #1a3129;
+    color: #1A3129;
 }
 
 .rating {
     color: #ffcc00;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .addToCartBtn {
-    background-color: #4d7b6c;
+    background-color: #4F7C70;
     color: #fff;
     border: none;
     padding: 8px 15px;
@@ -180,19 +146,205 @@
     background-color: #3e6255;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+
+.navigationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .navButton {
+    background: #FAFDF2;
+    border: none;
+    padding: 10px;
+    border-radius: 20%;
+    color: black;
+    cursor: pointer;
+    text-transform: bolder;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    border: 2px solid #E5F5BD;
+    height: auto;
+    width: 35.99px;
+  }
+  
+  
+  .dotsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 0;
+  }
+  
+  .dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #E5F5BD;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .activeDot {
+    background-color: #5E8B7F;
+  }
+
+
+
+
+/* For screens 1240px and below */
+@media (max-width: 1240px) {
+    .shopSection {
+        padding: 20px;
+    }
+    .headerTitle {
+        font-size: 2.25rem;
+    }
+    .headerDescription {
+        font-size: 0.95rem;
+    }
     .productList {
-        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .imageContainer img {
+        width: 250px;
+        height: auto;
     }
 }
 
-@media (max-width: 480px) {
-    .heroSection h1 {
-        font-size: 22px;
+/* For screens 1100px and below */
+@media (max-width: 1100px) {
+    .headerTitle {
+        font-size: 2rem;
     }
+    .headerDescription {
+        font-size: 0.9rem;
+    }
+    .productCard {
+        padding: 15px;
+    }
+    .imageContainer img {
+        width: 220px;
+        height: auto;
+    }
+}
 
-    .heroSection p {
-        font-size: 13px;
+/* For screens 1024px and below */
+@media (max-width: 1024px) {
+    .headerContent {
+        padding: 30px 15px;
     }
+    .productList {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .headerTitle {
+        font-size: 1.8rem;
+    }
+    .headerDescription {
+        font-size: 0.85rem;
+    }
+    .imageContainer img {
+        width: 200px;
+        height: auto;
+    }
+    .navButton {
+        padding: 8px;
+        font-size: 16px;
+      }
+    
+      .dot {
+        width: 10px;
+        height: 10px;
+      }
+}
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+    .shopSection {
+        padding: 15px;
+    }
+    .headerContent {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .headerTitle {
+        font-size: 1.5rem;
+    }
+    .headerDescription {
+        font-size: 0.8rem;
+    }
+    .imageContainer img {
+        width: 180px;
+        height: auto;
+    }
+    .addToCartBtn {
+        font-size: 13px;
+        padding: 7px 10px;
+    }
+}
+
+/* For screens 480px and below */
+@media (max-width: 480px) {
+    .headerTitle {
+        font-size: 1.3rem;
+    }
+    .headerDescription {
+        font-size: 0.75rem;
+    }
+    .imageContainer img {
+        width: 150px;
+        height: auto;
+    
+    }
+    .addToCartBtn {
+        font-size: 13px;
+        padding: 5px 8px;
+    }
+    .navButton {
+        padding: 6px;
+        font-size: 14px;
+      }
+    
+      .dot {
+        width: 8px;
+        height: 8px;
+      }
+}
+
+/* For screens 360px and below */
+@media (max-width: 360px) {
+    .shopSection {
+        padding: 10px;
+    }
+    .headerContent {
+        padding: 20px 10px;
+    }
+    .headerTitle {
+        font-size: 1.1rem;
+    }
+    .headerDescription {
+        font-size: 0.7rem;
+    }
+    .imageContainer img {
+        width: 120px;
+        height: auto;
+    }
+    .addToCartBtn {
+        font-size: 13px;
+        padding: 4px 6px;
+    }
+    .navButton {
+        padding: 4px;
+        font-size: 12px;
+        width: 30px;
+      }
+    
+      .dot {
+        width: 6px;
+        height: 6px;
+      }
 }
