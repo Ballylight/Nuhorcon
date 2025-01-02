@@ -6,63 +6,63 @@ const Shop = () => {
   const products = [
     {
       id: 1,
-      name: "Blocks shape-sorting Toy",
+      name: "Diabet Herbal Mix",
       description:
-        "Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus",
-      price: "$39.00",
+        "This is recommended for use by anyone who wants to keep their sugar level in check. It has also been proven to act within a short time. It is packed with nutraceuticals that help relieve inflammatory and oxidant stress conditions",
+      price: "₦2,000.00",
       salePrice: null,
       rating: 5,
       imgSrc: "/images/product1.svg",
     },
     {
       id: 2,
-      name: "Carrot Harvest Wooden Toy",
+      name: "Diabet Tea",
       description:
-        "Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus",
-      price: "$39.00",
-      salePrice: "$29.00",
+        "Stabilizes blood sugar, boost all round wellness. This is Diabet Tea…Recommended as a nutritional supplement to stabilize blood sugar levels and boost all round wellness. A cup a day, will keep diseases away",
+      price: "₦8,500.00",
+      salePrice: null,
       rating: 5,
-      imgSrc: "/images/product1.svg",
+      imgSrc: "/images/product2.svg",
     },
     {
       id: 3,
-      name: "Talking Flash Cards Learning Toys",
+      name: "Lipidolicks Burst",
       description:
-        "Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus",
-      price: "$39.00",
+        "Meet weightloss goals, improve digestion. Recommended for use in burning excess body and belly fat, achieving Weightloss goals and aids digestion. It is an effective antioxidant and keeps your energy levels up!",
+      price: "₦2,000.00",
       salePrice: null,
       rating: 5,
-      imgSrc: "/images/product1.svg",
+      imgSrc: "/images/product3.svg",
     },
     {
       id: 4,
-      name: "Blocks shape-sorting Toy",
+      name: "Papaya tea",
       description:
-        "Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus.",
-      price: "$39.00",
-      salePrice: "$29.00",
-      rating: 2,
-      imgSrc: "/images/product1.svg",
+        "A blend of pawpaw leaves and unripe fruit. A powerful Antioxidant blend of Pawpaw leaves and unripe fruit This is Papaya Tea…Recommended as a powerful Antioxidant nutraceutical blend for relieving stress conditions and anemia.",
+      price: "₦8,500.00",
+      salePrice: null,
+      rating: 5,
+      imgSrc: "/images/product4.svg",
     },
     {
       id: 5,
-      name: "Wooden sorting Toys",
+      name: "The Dark Knight",
       description:
-        "Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus",
-      price: "$39.00",
+        "An intriguing story that promises suspense, action, and unforgettable characters. The Dark Knight invites readers into a world of mystery and adventure, where the line between hero and villain blurs. Perfect for fans of gripping tales with depth and intensity, this book will leave you wanting more.",
+      price: "$14.99",
       salePrice: null,
       rating: 5,
-      imgSrc: "/images/product1.svg",
+      imgSrc: "/images/product5.svg",
     },
     {
       id: 6,
-      name: "Montessori Dinosaur Puzzle",
+      name: "Weight loss Secrets",
       description:
-        "Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus",
-      price: "$39.00",
+        "Discover the tips and strategies you need to achieve your health and fitness goals. Weight Loss Secrets offers practical advice, motivation, and insights to help you on your journey to a healthier, happier you. Perfect for anyone looking to unlock the keys to sustainable weight loss and lasting results!",
+      price: "$5.00",
       salePrice: null,
       rating: 5,
-      imgSrc: "/images/product1.svg",
+      imgSrc: "/images/product6.svg",
     },
   ];
 
@@ -138,7 +138,12 @@ const Shop = () => {
                   {"★".repeat(product.rating)}
                   {"☆".repeat(5 - product.rating)}
                 </div>
-                <button className={styles.addToCartBtn}>Add to cart</button>
+                <button
+                  className={styles.addToCartBtn}
+                  onClick={() => window.open("https://wa.me/2348094503658", "_blank")}
+                >
+                  Add to cart
+                </button>
               </div>
             </div>
           ))}
@@ -153,20 +158,7 @@ const Shop = () => {
         >
           &lt;
         </button>
-        {/* <div className={styles.dotsContainer}>
-          {[...Array(totalPages)].map((_, index) => (
-            <div
-              key={index}
-              className={
-                currentPage === index + 1
-                  ? styles.activeDot
-                  : styles.dot
-              }
-              onClick={() => handleDotClick(index + 1)}
-            >
-            </div>
-          ))}
-        </div> */}
+
 
         <div className={styles.dotsContainer}>
           {[...Array(totalPages)].map((_, index) => (

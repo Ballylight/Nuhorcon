@@ -1,0 +1,267 @@
+/* .contactPage {
+    font-family: Arial, sans-serif;
+    background-color: #f8fbe6;
+    padding: 20px;
+    color: #344b33;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .contactInfo {
+    display: flex;
+    justify-content: space-around;
+    background-color: #abc9a0;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+  }
+  
+  .infoCard {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .icon {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .formSection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .contactForm {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .inputGroup {
+    margin-bottom: 20px;
+  }
+  
+  .inputGroup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .inputGroup input,
+  .inputGroup textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d9e2c2;
+    border-radius: 5px;
+    background-color: #f8fbe6;
+    font-size: 1rem;
+  }
+  
+  .charLimit {
+    font-size: 0.8rem;
+    text-align: right;
+    color: #a0a0a0;
+  }
+  
+  .submitButton {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6c8b5a;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submitButton:hover {
+    background-color: #5a7047;
+  }
+  
+  .map {
+    flex: 1;
+  }
+  
+  .mapPlaceholder {
+    width: 100%;
+    height: 100%;
+    background-color: #abc9a0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  
+  .socialMedia {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .socialIcon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #344b33;
+  }
+  
+  .socialIcon:hover {
+    color: #6c8b5a;
+  }
+   */
+
+
+
+
+
+
+
+
+
+
+   .contactPage {
+  font-family: Arial, sans-serif;
+  background-color: #f8fbe6;
+  padding: 20px;
+  color: #344b33;
+}
+
+/* Header and Contact Info Section */
+.headerSection {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: space-around;
+  background-color: #abc9a0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.infoCard {
+  text-align: center;
+  flex: 1;
+  padding: 10px;
+  color: #fff;
+}
+
+.infoCard img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 10px auto;
+}
+
+/* Form, Map, and Social Media Section */
+.formMapSection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.contactForm {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d9e2c2;
+  border-radius: 5px;
+  background-color: #f8fbe6;
+  font-size: 1rem;
+}
+
+.charLimit {
+  font-size: 0.8rem;
+  text-align: right;
+  color: #a0a0a0;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6c8b5a;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #5a7047;
+}
+
+.map {
+  flex: 1;
+}
+
+.mapPlaceholder {
+  width: 100%;
+  height: 100%;
+  background-color: #abc9a0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* Social Media Icons */
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socialMedia img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}

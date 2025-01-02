@@ -1,0 +1,508 @@
+/* BlogPost Container */
+.container {
+    width: 1350px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding: 2rem;
+    font-family: Urbanist;
+    background-color: #FBFDF4;
+    border-radius: 30px;
+}
+
+/* Blog Image Wrapper */
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    border-radius: 12px;
+    /* Smooth corners for the image */
+}
+
+/* Blog Image */
+.blogImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the area */
+    border-radius: 12px;
+    /* Match image wrapper */
+}
+
+/* Overlay Text on Image */
+.imageText {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    max-width: 100%;
+}
+
+/* Blog Title */
+.blogTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 2.5rem 0 1.5rem;
+    text-align: center;
+    color: #1A3129;
+    line-height: 1.3;
+}
+
+/* Blog Content */
+.blogContent {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #333333;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.seeMoreButton {
+    background-color: #5E8B7F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.seeMoreButton:hover {
+    background-color: #4D7368;
+}
+
+
+/* Media Queries for Responsive Design */
+
+/* For widths 1350px and below */
+@media (max-width: 1380px) {
+    .container {
+        width: 1250px;
+    }
+
+    .blogTitle {
+        font-size: 2.4rem;
+    }
+
+    .blogContent {
+        font-size: 1.15rem;
+    }
+
+    .imageWrapper {
+        height: 500px;
+    }
+
+    .imageText {
+        font-size: 1.7rem;
+    }
+
+    .seeMoreButton {
+        font-size: 1.1rem;
+        padding: 9px 18px;
+    }
+}
+
+/* For widths 1300px and below */
+@media (max-width: 1300px) {
+    .container {
+        width: 1200px;
+    }
+
+    .blogTitle {
+        font-size: 2.2rem;
+    }
+
+    .blogContent {
+        font-size: 1.1rem;
+    }
+
+    .imageWrapper {
+        height: 480px;
+    }
+
+    .imageText {
+        font-size: 1.6rem;
+    }
+
+    .seeMoreButton {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+/* For widths 1240px and below */
+@media (max-width: 1240px) {
+    .container {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .blogTitle {
+        font-size: 2.3rem;
+    }
+
+    .blogContent {
+        font-size: 1.1rem;
+    }
+}
+
+/* For widths 1100px and below */
+@media (max-width: 1100px) {
+    /* .container {
+        width: 85%;
+    } */
+
+    .imageWrapper {
+        height: 480px;
+    }
+
+    .blogTitle {
+        font-size: 2.1rem;
+    }
+}
+
+/* For widths 1024px and below */
+@media (max-width: 1024px) {
+    /* .container {
+        width: 80%;
+    } */
+
+    .blogTitle {
+        font-size: 2rem;
+    }
+
+    .blogContent {
+        font-size: 1rem;
+    }
+}
+
+/* For widths 768px and below */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .imageWrapper {
+        height: 400px;
+    }
+
+    .blogTitle {
+        font-size: 1.8rem;
+    }
+
+    .blogContent {
+        font-size: 1rem;
+    }
+
+    .imageText {
+        font-size: 1.6rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .seeMoreButton {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+/* For widths 480px and below */
+@media (max-width: 480px) {
+    .container {
+        /* width: 95%; */
+        padding: 0.9rem;
+    }
+
+    .imageWrapper {
+        height: 300px;
+    }
+
+    .imageText {
+        font-size: 1.4rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .blogTitle {
+        font-size: 1.6rem;
+    }
+
+    .blogContent {
+        font-size: 0.9rem;
+    }
+
+    .seeMoreButton {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
+
+/* For widths 360px and below */
+@media (max-width: 360px) {
+    .container {
+        /* width: 100%; */
+        padding: 0.5rem;
+    }
+
+    .imageWrapper {
+        height: 250px;
+    }
+
+    .blogTitle {
+        font-size: 1.4rem;
+    }
+
+    .blogContent {
+        font-size: 0.8rem;
+    }
+
+    .imageText {
+        font-size: 1.2rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    .seeMoreButton {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #F6FBE9;
+    /* Light background */
+    padding: 40px 0;
+    border-radius: 10px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    border: 2px solid #E5F5BD;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Urbanist;
+
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footerText {
+    flex: 1;
+}
+
+.footerHeading {
+    font-size: 1.9rem;
+    color: #1A3129;
+    margin: 0;
+}
+
+.footerDescription {
+    font-size: 1rem;
+    color: #333333;
+    line-height: 1.6;
+    margin-right: 20px;
+    max-width: 1000px;
+}
+
+.footerButtonContainer {
+    flex-shrink: 0;
+}
+
+.contactButton {
+    background-color: #5E8B7F;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Media Queries */
+
+/* For screens <= 1240px */
+@media (max-width: 1240px) {
+    .footer {
+        padding: 30px 15px;
+        width: auto;
+        margin: 50px 20px;
+    }
+
+    .footerHeading {
+        font-size: 1.6rem;
+    }
+
+    .footerDescription {
+        font-size: 0.9rem;
+    }
+
+    .contactButton {
+        font-size: 1rem;
+        padding: 12px 25px;
+        /* Adjust button padding */
+        margin-top: -12px;
+        /* Space between button and text */
+    }
+}
+
+/* For screens <= 1100px */
+@media (max-width: 1100px) {
+    .footerContainer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .footerText {
+        margin-bottom: 20px;
+    }
+
+    .footerHeading {
+        font-size: 1.7rem;
+    }
+
+    .footerDescription {
+        font-size: 0.95rem;
+        max-width: 800px;
+    }
+
+    .contactButton {
+        padding: 8px 16px;
+        font-size: 0.95rem;
+    }
+}
+
+/* For screens <= 1024px */
+@media (max-width: 1024px) {
+    .footerDescription {
+        font-size: 0.9rem;
+        max-width: 700px;
+    }
+
+}
+
+/* For screens <= 768px */
+@media (max-width: 768px) {
+    .footerContainer {
+        gap: 15px;
+    }
+
+    .footerHeading {
+        font-size: 1.5rem;
+    }
+
+    .contactButton {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+/* For screens <= 480px */
+@media (max-width: 480px) {
+    .footerHeading {
+        font-size: 1.3rem;
+    }
+
+    .footerDescription {
+        font-size: 0.85rem;
+        max-width: 600px;
+    }
+
+    .contactButton {
+        font-size: 0.85rem;
+        padding: 6px 14px;
+    }
+}
+
+/* For screens <= 360px */
+@media (max-width: 360px) {
+    .footerHeading {
+        font-size: 1.2rem;
+    }
+
+    .footerDescription {
+        font-size: 0.8rem;
+        max-width: 500px;
+    }
+
+    .contactButton {
+        font-size: 0.8rem;
+        padding: 5px 12px;
+    }
+}
