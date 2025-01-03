@@ -51,7 +51,7 @@ const inter = Roboto({
 });
 
 export const metadata = {
-  title: "Pngfitfam",
+  title: "Nuhorcon",
   description: "A Healthier LifeStyle",
 };
 
