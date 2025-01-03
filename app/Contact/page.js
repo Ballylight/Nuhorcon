@@ -1,83 +1,79 @@
-// import React from "react";
-// import styles from "./contact.module.css";
+// import React from 'react';
+// import styles from './contact.module.css';
 
-// function Contact() {
+// const ContactPage = () => {
 //   return (
-//     <div className={styles.contactPage}>
-//       {/* Header Section */}
-//       <div className={styles.header}>
-//         <h1 className={styles.title}>Contact Us</h1>
-//         <p className={styles.description}>
-//           We value your feedback, questions, and concerns at Nutritionist. Our
-//           dedicated team is here to assist you and provide the support you need
-//           on your nutritional journey. Please don't hesitate to reach out to us
-//           using any of the following contact methods.
-//         </p>
-//       </div>
+//     <div className={styles.container}>
+//       <h1 className={styles.heading}>Contact Us</h1>
+//       <p className={styles.paragraph}>
+//         We value your feedback, questions, and concerns at Nutritionist. Our dedicated team is here to assist you and provide the support you need on your nutritional journey. Please don't hesitate to reach out to us using any of the following contact methods.
+//       </p>
 
-//       {/* Contact Info Section */}
 //       <div className={styles.contactInfo}>
-//         <div className={styles.infoCard}>
-//           <span className={styles.icon}>📧</span>
-//           <p>support@nutritionist.com</p>
+//         <div className={styles.infoItem}>
+//           <img src="/images/emailicon.png" alt="Email Icon" className={styles.icon} />
+//           <span>support@nutritionist.com</span>
 //         </div>
-//         <div className={styles.infoCard}>
-//           <span className={styles.icon}>📞</span>
-//           <p>+91 00000 00000</p>
+//         <div className={styles.infoItem}>
+//           <img src="/images/phoneicon.png" alt="Phone Icon" className={styles.icon} />
+//           <span>+91 00000 00000</span>
 //         </div>
-//         <div className={styles.infoCard}>
-//           <span className={styles.icon}>📍</span>
-//           <p>Some Where in the World</p>
-//         </div>
-//       </div>
-
-//       {/* Form and Map Section */}
-//       <div className={styles.formSection}>
-//         <form className={styles.contactForm}>
-//           <div className={styles.inputGroup}>
-//             <label htmlFor="name">Full Name</label>
-//             <input type="text" id="name" placeholder="Enter your Name" />
-//           </div>
-//           <div className={styles.inputGroup}>
-//             <label htmlFor="email">Email</label>
-//             <input type="email" id="email" placeholder="Enter your Email" />
-//           </div>
-//           <div className={styles.inputGroup}>
-//             <label htmlFor="phone">Phone Number</label>
-//             <input type="text" id="phone" placeholder="Enter your Number" />
-//           </div>
-//           <div className={styles.inputGroup}>
-//             <label htmlFor="message">Message</label>
-//             <textarea
-//               id="message"
-//               rows="4"
-//               placeholder="Enter your Message"
-//             ></textarea>
-//             <p className={styles.charLimit}>Max 250 Chars</p>
-//           </div>
-//           <button type="submit" className={styles.submitButton}>
-//             Send Message
-//           </button>
-//         </form>
-//         <div className={styles.map}>
-//           {/* Placeholder for Map */}
-//           <div className={styles.mapPlaceholder}>Map Placeholder</div>
+//         <div className={styles.infoItem}>
+//           <img src="/images/mapicon.png" alt="Map Icon" className={styles.icon} />
+//           <span>Some Where in the World</span>
 //         </div>
 //       </div>
 
-//       {/* Social Media Icons */}
-//       <div className={styles.socialMedia}>
-//         <span className={styles.socialIcon}>🌐</span>
-//         <span className={styles.socialIcon}>🐦</span>
-//         <span className={styles.socialIcon}>🔗</span>
-//       </div>
+//       <form className={styles.form}>
+//         <div className={styles.formGroup}>
+//           <label htmlFor="fullName" className={styles.label}>Full Name</label>
+//           <input
+//             type="text"
+//             id="fullName"
+//             placeholder="Enter your Name"
+//             className={styles.input}
+//           />
+//         </div>
+
+//         <div className={styles.formGroup}>
+//           <label htmlFor="email" className={styles.label}>Email</label>
+//           <input
+//             type="email"
+//             id="email"
+//             placeholder="Enter your Email"
+//             className={styles.input}
+//           />
+//         </div>
+
+//         <div className={styles.formGroup}>
+//           <label htmlFor="phone" className={styles.label}>Phone Number</label>
+//           <input
+//             type="tel"
+//             id="phone"
+//             placeholder="Enter your Number"
+//             className={styles.input}
+//           />
+//         </div>
+
+//         <div className={styles.formGroup}>
+//           <label htmlFor="message" className={styles.label}>Message</label>
+//           <textarea
+//             id="message"
+//             placeholder="Enter your Message"
+//             className={styles.textarea}
+//             rows="5"
+//             maxLength="250"
+//           />
+//           <span className={styles.charLimit}>Max 250 Chars</span>
+//         </div>
+
+//         <button type="submit" className={styles.submitButton}>Send Message</button>
+//       </form>
 //     </div>
 //   );
-// }
+// };
 
-// export default Contact;
-
-
+// export default ContactPage;
 
 
 
@@ -87,84 +83,82 @@
 
 
 
-import React from "react";
-import styles from "./contact.module.css";
-// import emailIcon from "../public/images/email.png";
-// import phoneIcon from "../public/images/phone.png";
-// import locationIcon from "../public/images/location.png";
-// import facebookIcon from "../public/images/facebook.png";
-// import twitterIcon from "../public/images/twitter.png";
-// import linkedinIcon from "../public/images/linkedin.png";
 
-function Contact() {
+
+
+
+// page.js
+import styles from './contact.module.css';
+
+import EmailIcon from '../../public/images/email-icon.png';
+import PhoneIcon from '../../public/images/phone-icon.png';
+import MapIcon from '../../public/images/map-icon.png';
+
+
+export default function ContactPage() {
     return (
-        <div className={styles.contactPage}>
-            {/* Header and Contact Info Section */}
-            <div className={styles.headerSection}>
-                <h1 className={styles.title}>Contact Us</h1>
-                <p className={styles.description}>
-                    We value your feedback, questions, and concerns at Nutritionist. Our
-                    dedicated team is here to assist you and provide the support you need
-                    on your nutritional journey. Please don't hesitate to reach out to us
-                    using any of the following contact methods.
+        <div className={styles.container}>
+
+            <div className={styles.headerContent}>
+                <h1 className={styles.headerTitle}>Our Blogs</h1>
+                <p className={styles.headerDescription}>
+                    Dive into a rich collection of insightful articles curated by Dr. Ngozi Awa Imaga (PhD). Discover practical tips on healthy eating, weight management, and holistic wellness, designed to help you live a healthier, balanced life.
                 </p>
-                <div className={styles.contactInfo}>
-                    {/* <div className={styles.infoCard}>
-            <img src={emailIcon.src} alt="Email Icon" />
-            <p>support@nutritionist.com</p>
-          </div>
-          <div className={styles.infoCard}>
-            <img src={phoneIcon.src} alt="Phone Icon" />
-            <p>+91 00000 00000</p>
-          </div>
-          <div className={styles.infoCard}>
-            <img src={locationIcon.src} alt="Location Icon" />
-            <p>Some Where in the World</p>
-          </div> */}
+            </div>
+
+            {/* <div className={styles.contactMethods}>
+                <div className={styles.contactCard}>
+                    <span className="icon-email"></span>
+                    <p>support@nutritionist.com</p>
+                </div>
+                <div className={styles.contactCard}>
+                    <span className="icon-phone"></span>
+                    <p>+91 00000 00000</p>
+                </div>
+                <div className={styles.contactCard}>
+                    <span className="icon-location"></span>
+                    <p>Some Where in the World</p>
+                </div>
+            </div> */}
+
+            <div className={styles.contactMethods}>
+                <div className={styles.contactCard}>
+                    <img src={EmailIcon.src} alt="Email Icon" className={styles.icon} />
+                    <p>support@nutritionist.com</p>
+                </div>
+                <div className={styles.contactCard}>
+                    <img src={PhoneIcon.src} alt="Phone Icon" className={styles.icon} />
+                    <p>+91 00000 00000</p>
+                </div>
+                <div className={styles.contactCard}>
+                    <img src={MapIcon.src} alt="Location Icon" className={styles.icon} />
+                    <p>Some Where in the World</p>
                 </div>
             </div>
 
-            {/* Form, Map, and Social Media Section */}
-            <div className={styles.formMapSection}>
-                <form className={styles.contactForm}>
+
+
+
+            <div className={styles.formAndMap}>
+                <form className={styles.form}>
                     <div className={styles.inputGroup}>
-                        <label htmlFor="name">Full Name</label>
-                        <input type="text" id="name" placeholder="Enter your Name" />
+                        <input type="text" placeholder="Enter your Name" className={styles.input} />
+                        <input type="email" placeholder="Enter your Email" className={styles.input} />
                     </div>
-                    <div className={styles.inputGroup}>
-                        <label htmlFor="email">Email</label>
-                        <input type="email" id="email" placeholder="Enter your Email" />
-                    </div>
-                    <div className={styles.inputGroup}>
-                        <label htmlFor="phone">Phone Number</label>
-                        <input type="text" id="phone" placeholder="Enter your Number" />
-                    </div>
-                    <div className={styles.inputGroup}>
-                        <label htmlFor="message">Message</label>
-                        <textarea
-                            id="message"
-                            rows="4"
-                            placeholder="Enter your Message"
-                        ></textarea>
-                        <p className={styles.charLimit}>Max 250 Chars</p>
-                    </div>
-                    <button type="submit" className={styles.submitButton}>
-                        Send Message
-                    </button>
+                    <input type="tel" placeholder="Enter your Number" className={styles.input} />
+                    <textarea placeholder="Enter your Message" maxLength="250" className={styles.textarea}></textarea>
+                    <button type="submit" className={styles.submitButton}>Send Message</button>
                 </form>
+
                 <div className={styles.map}>
-                    {/* Map Placeholder */}
-                    <div className={styles.mapPlaceholder}>Map Placeholder</div>
+                    <div className={styles.mapPlaceholder}></div>
+                    <div className={styles.socialIcons}>
+                        <span className="icon-facebook"></span>
+                        <span className="icon-twitter"></span>
+                        <span className="icon-linkedin"></span>
+                    </div>
                 </div>
             </div>
-            {/* <div className={styles.socialMedia}>
-                <img src={facebookIcon.src} alt="Facebook Icon" />
-                <img src={twitterIcon.src} alt="Twitter Icon" />
-                <img src={linkedinIcon.src} alt="LinkedIn Icon" />
-            </div> */}
         </div>
     );
 }
-
-export default Contact;
-

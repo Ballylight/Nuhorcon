@@ -10,7 +10,7 @@ function Blog() {
     const blogs = [
         {
             folder: '/Blogcontent1', // Path to the folder for this blog
-            image: '/images/hydration.svg',
+            image: '/images/sample blog image.svg',
             authorImage: '/images/dr-ngozi-profile.svg',
             author: 'Prof. Ngozi Awa Imaga, PhD',
             date: '23 May 2023',
@@ -22,7 +22,7 @@ function Blog() {
         },
         {
             folder: '/Blogcontent2', // Path to the folder for this blog
-            image: '/images/mindful-eating.svg',
+            image: '/images/papaya.svg',
             authorImage: '/images/dr-ngozi-profile.svg',
             author: 'Prof. Ngozi Awa Imaga, PhD',
             date: '23 May 2023',
@@ -34,7 +34,7 @@ function Blog() {
         },
         {
             folder: '/Blogcontent3', // Path to the folder for this blog
-            image: '/images/macronutrients.svg',
+            image: '/images/weight-loss.svg',
             authorImage: '/images/dr-ngozi-profile.svg',
             author: 'Prof. Ngozi Awa Imaga, PhD',
             date: '23 May 2023',
@@ -46,7 +46,7 @@ function Blog() {
         },
         {
             folder: '/Blogcontent4', // Path to the folder for this blog
-            image: '/images/snacks.svg',
+            image: '/images/tea.svg',
             authorImage: '/images/dr-ngozi-profile.svg',
             author: 'Prof. Ngozi Awa Imaga, PhD',
             date: '23 May 2023',

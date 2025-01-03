@@ -9,7 +9,7 @@ const BlogPost = () => {
                 {/* Blog Image */}
                 <div className={styles.imageWrapper}>
                     <img
-                        src="/images/sample blog image.svg" // Replace with your actual image path
+                        src="/images/tea.svg" // Replace with your actual image path
                         alt="Wellness Insights"
                         className={styles.blogImage}
                     />

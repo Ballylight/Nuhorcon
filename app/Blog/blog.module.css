@@ -9,6 +9,7 @@
     overflow: hidden; /* Prevent layout overflow issues */
     font-family: Urbanist;
     margin-bottom: 50px;
+    text-decoration: none;
 }
 
 /* Header Content Wrapper */
@@ -58,6 +59,7 @@
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
 }
 
 .blogCard:hover {
@@ -75,6 +77,7 @@
 /* Blog Info Section */
 .blogInfo {
     padding: 20px;
+    text-decoration: none; /* Removes the underline */
 }
 
 /* Author Info - Flex for alignment */
@@ -86,6 +89,7 @@
     border: 2px solid #E5F5BD;
     padding: 9px;
     border-radius: 10px;
+    text-decoration: none; /* Removes the underline */
 }
 
 .authorImage {
@@ -103,6 +107,7 @@
     margin: 0;
     align-items: center;
     justify-content: center;
+    text-decoration: none; /* Removes the underline */
 }
 
 .metaInfo {
@@ -111,6 +116,7 @@
     margin-top: 3px;
     align-items: center;
     justify-content: center;
+    text-decoration: none; /* Removes the underline */
 }
 
 /* Blog Category */
@@ -120,6 +126,7 @@
     margin-bottom: 10px;
     text-transform: uppercase;
     font-weight: bold;
+    text-decoration: none; 
 }
 
 /* Blog Title */
@@ -128,6 +135,7 @@
     font-weight: bold;
     margin: 10px 0;
     color: #222;
+    text-decoration: none; /* Removes the underline */
 }
 
 /* Blog Description */
@@ -136,6 +144,7 @@
     color: #555;
     line-height: 1.5;
     margin-bottom: 13px;
+    text-decoration: none; 
 }
 
 /* Media Queries */

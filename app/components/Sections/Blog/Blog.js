@@ -5,48 +5,52 @@ import styles from './blog.module.css';
 function Blog() {
     const blogs = [
         {
-            image: '/images/hydration.svg', // Replace with your image path
-            authorImage: '/images/author-emily.svg', // Replace with your author image path
-            author: 'Emily Johnson',
+            folder: '/Blogcontent1', // Path to the folder for this blog
+            image: '/images/sample blog image.svg',
+            authorImage: '/images/dr-ngozi-profile.svg',
+            author: 'Prof. Ngozi Awa Imaga, PhD',
+            date: '23 May 2023',
+            readTime: '5 min read',
+            category: 'Health & Wellness',
+            title: 'Managing Blood Sugar Levels Naturally: Introducing Diabet Herbal Mix',
+            description:
+                'Discover how Managing Blood Sugar Levels Naturally With Diabet Herbal Mix.',
+        },
+        {
+            folder: '/Blogcontent2', // Path to the folder for this blog
+            image: '/images/papaya.svg',
+            authorImage: '/images/dr-ngozi-profile.svg',
+            author: 'Prof. Ngozi Awa Imaga, PhD',
+            date: '23 May 2023',
+            readTime: '5 min read',
+            category: 'Nutrition',
+            title: 'The Power of Antioxidants: Benefits of Papaya Tea',
+            description:
+                'Learn about the power of Antioxidants and improve your overall well-being.',
+        },
+        {
+            folder: '/Blogcontent3', // Path to the folder for this blog
+            image: '/images/weight-loss.svg',
+            authorImage: '/images/dr-ngozi-profile.svg',
+            author: 'Prof. Ngozi Awa Imaga, PhD',
             date: '23 May 2023',
             readTime: '5 min read',
             category: 'Weight Loss',
-            title: 'The Benefits of Hydration for Weight Loss',
+            title: 'Achieving Weight Loss Goals with Lipidolicks Burst',
             description:
-                'Discover how staying hydrated can support your weight loss goals and improve overall health.',
+                'Discover how Lipidolicks Burst can help you achieve your weight loss goals effectively. ',
         },
         {
-            image: '/images/mindful-eating.svg', // Replace with your image path
-            authorImage: '/images/author-emily.svg', // Replace with your author image path
-            author: 'Sarah Thompson',
+            folder: '/Blogcontent4', // Path to the folder for this blog
+            image: '/images/tea.svg',
+            authorImage: '/images/dr-ngozi-profile.svg',
+            author: 'Prof. Ngozi Awa Imaga, PhD',
             date: '23 May 2023',
             readTime: '5 min read',
-            category: 'Mindful Eating',
-            title: 'Cultivating a Healthy Relationship with Food',
+            category: ' Health & Wellness',
+            title: 'Why Diabet Tea Supplements Are Essential for Wellness',
             description:
-                'Learn how practicing mindful eating can help you develop a healthier relationship with food and improve your overall well-being.',
-        },
-        {
-            image: '/images/macronutrients.svg', // Replace with your image path
-            authorImage: '/images/author-emily.svg', // Replace with your author image path
-            author: 'Mark Wilson',
-            date: '23 May 2023',
-            readTime: '5 min read',
-            category: 'Understanding Macronutrients',
-            title: 'Carbohydrates, Proteins, and Fats',
-            description:
-                'Get a comprehensive understanding of macronutrients and their role in your diet for optimal health and weight management.',
-        },
-        {
-            image: '/images/snacks.svg', // Replace with your image path
-            authorImage: '/images/author-emily.svg', // Replace with your author image path
-            author: 'Emily Johnson',
-            date: '23 May 2023',
-            readTime: '5 min read',
-            category: 'Healthy Snacks on the Go',
-            title: 'Quick and Nutritious Options',
-            description:
-                'Explore a variety of convenient and healthy snack ideas to keep you fueled throughout the day.',
+                'Explore the essential role that Diabet Tea supplements play in promoting overall wellness. ',
         },
     ];
 

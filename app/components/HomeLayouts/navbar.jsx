@@ -22,7 +22,7 @@ export default function NavBar(props) {
       <div className={style.onmobile}>
         <div className={style.left}>
           <Image src={logo} alt="logo" className={style.logo}></Image>
-          <div className={style.text}>Pngfitfam</div>
+          <div className={style.text}>Nuhorcon</div>
         </div>
         <CButton onClick={() => { navref.current.classList.toggle(style.showmenu) }} className={style.menubtn}>Menu</CButton>
       </div>

@@ -10,7 +10,7 @@ export default function Home() {
       <Hero />
       <Features/>
       <Blog />  
-      <Testimonials/>
+      {/* <Testimonials/> */}
       <Cta />
     </div>
   );

@@ -6,10 +6,12 @@ export default function About() {
             {/* Header Section */}
             <section className={styles.header}>
                 <div className={styles.headerContent}>
-                    <h1 className={styles.headerTitle}>About PNg Ftfam Solutions</h1>
+                    <h1 className={styles.headerTitle}>About Nuhorcon Solutions</h1>
                     <p className={styles.headerDescription}>
-                        At PNg Ftfam Solutions, we believe that true wellness is built on a foundation of science, nutrition, and a holistic approach to health. Led by Dr. Ngozi Awa Imaga, our mission is to provide research-driven solutions that empower individuals to make healthier lifestyle choices. Whether you're managing weight, seeking nutritional guidance, or addressing specific health conditions, we are here to support your journey with tailored plans that deliver real, lasting results.
-                    </p>
+                        Nuhorcon was established in June 2007 as a global resource company catering to client's interiordesign needs
+                        over the years we have morphed into several channels including our academy, laboratory and book writing endeavours.
+
+                        Our recent foray into nutritional solutions has led Prof Ngozi into health campaigns and community development initiatives.                    </p>
                     <div className={styles.imageContainer}>
                         <img src="/images/dr-ngozi-presentation.svg" alt="Dr. Ngozi Presentation" className={styles.headerImage} />
                     </div>
@@ -21,13 +23,13 @@ export default function About() {
             <section className={styles.story}>
                 <h2 className={styles.storyTitle}>Our Story</h2>
                 <p className={styles.storyIntro}>
-                    At PNg Fitfam Solutions, we are committed to transforming lives by providing scientifically-backed nutritional guidance tailored to individual needs. Our mission is to help you reach your health and wellness goals through personalized meal plans and fitness strategies.
+                    At Nuhorcon, we are committed to transforming lives by providing scientifically-backed nutritional guidance tailored to individual needs. Our mission is to help you reach your health and wellness goals through personalized meal plans and fitness strategies.
                 </p>
 
                 <div className={styles.storySection}>
                     <div className={styles.storyItem}>
                         <img src="./images/birth-png-ftfam.svg" alt="Person exercising" className={styles.storyImage} />
-                        <h3 className={styles.storyItemTitle}>The Birth of PNg Ftfam Solutions</h3>
+                        <h3 className={styles.storyItemTitle}>The Birth of Nuhorcon Solutions</h3>
                         <p className={styles.storyItemDescription}>
                             What began as Dr. Ngozi’s academic passion for nutrition and biochemistry
                             evolved into a full-fledged wellness movement. Inspired by her research and personal transformation, Dr. Ngozi set out to create a community that fosters healthy living through accessible, science-backed meal plans and fitness guidance.
@@ -69,7 +71,7 @@ export default function About() {
                 <div className={styles.achievementsHeader}>
                     <h2 className={styles.achievementsTitle}>Achievements</h2>
                     <p className={styles.achievementsDescription}>
-                        PNg Fitfam Solutions has successfully guided over 500 clients toward healthier lifestyles through our bespoke nutrition plans. We have also conducted numerous community outreach programs aimed at addressing weight management challenges and chronic conditions like diabetes.
+                        Nuhorcon Solutions has successfully guided over 500 clients toward healthier lifestyles through our bespoke nutrition plans. We have also conducted numerous community outreach programs aimed at addressing weight management challenges and chronic conditions like diabetes.
                     </p>
                 </div>
 

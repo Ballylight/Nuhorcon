@@ -13,6 +13,7 @@ const Shop = () => {
       salePrice: null,
       rating: 5,
       imgSrc: "/images/product1.svg",
+      link: "https://wa.me/2348094503658" // Replace with actual link
     },
     {
       id: 2,
@@ -23,6 +24,7 @@ const Shop = () => {
       salePrice: null,
       rating: 5,
       imgSrc: "/images/product2.svg",
+      link: "https://wa.me/2348094503658" // Replace with actual link
     },
     {
       id: 3,
@@ -33,6 +35,7 @@ const Shop = () => {
       salePrice: null,
       rating: 5,
       imgSrc: "/images/product3.svg",
+      link: "https://wa.me/2348094503658" // Replace with actual link
     },
     {
       id: 4,
@@ -43,6 +46,7 @@ const Shop = () => {
       salePrice: null,
       rating: 5,
       imgSrc: "/images/product4.svg",
+      link: "https://wa.me/2348094503658" // Replace with actual link
     },
     {
       id: 5,
@@ -53,6 +57,7 @@ const Shop = () => {
       salePrice: null,
       rating: 5,
       imgSrc: "/images/product5.svg",
+      link: "https://www.amazon.com/dp/B0C9S7Q3VM" // Replace with actual link
     },
     {
       id: 6,
@@ -63,6 +68,7 @@ const Shop = () => {
       salePrice: null,
       rating: 5,
       imgSrc: "/images/product6.svg",
+      link: "https://www.amazon.com/dp/B089P4XL46/ref=cm_sw_r_awdo_ZQZPH8TZ9HTK3AWM59KD" // Replace with actual link
     },
   ];
 
@@ -140,7 +146,7 @@ const Shop = () => {
                 </div>
                 <button
                   className={styles.addToCartBtn}
-                  onClick={() => window.open("https://wa.me/2348094503658", "_blank")}
+                  onClick={() => window.open(product.link, "_blank")}
                 >
                   Add to cart
                 </button>
@@ -159,7 +165,6 @@ const Shop = () => {
           &lt;
         </button>
 
-
         <div className={styles.dotsContainer}>
           {[...Array(totalPages)].map((_, index) => (
             <div
@@ -173,7 +178,6 @@ const Shop = () => {
             ></div>
           ))}
         </div>
-
 
         <button
           className={styles.navButton}

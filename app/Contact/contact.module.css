@@ -1,267 +1,180 @@
-/* .contactPage {
-    font-family: Arial, sans-serif;
-    background-color: #f8fbe6;
-    padding: 20px;
-    color: #344b33;
-  }
-  
-  .header {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .description {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  
-  .contactInfo {
-    display: flex;
-    justify-content: space-around;
-    background-color: #abc9a0;
-    padding: 20px;
-    margin-bottom: 40px;
-    border-radius: 10px;
-  }
-  
-  .infoCard {
-    text-align: center;
-    flex: 1;
-    padding: 10px;
-    color: #fff;
-  }
-  
-  .icon {
-    display: block;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .formSection {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-  }
-  
-  .contactForm {
-    flex: 1;
-    margin-right: 20px;
-  }
-  
-  .inputGroup {
-    margin-bottom: 20px;
-  }
-  
-  .inputGroup label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .inputGroup input,
-  .inputGroup textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #d9e2c2;
-    border-radius: 5px;
-    background-color: #f8fbe6;
-    font-size: 1rem;
-  }
-  
-  .charLimit {
-    font-size: 0.8rem;
-    text-align: right;
-    color: #a0a0a0;
-  }
-  
-  .submitButton {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #6c8b5a;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .submitButton:hover {
-    background-color: #5a7047;
-  }
-  
-  .map {
-    flex: 1;
-  }
-  
-  .mapPlaceholder {
-    width: 100%;
-    height: 100%;
-    background-color: #abc9a0;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 1.2rem;
-  }
-  
-  .socialMedia {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .socialIcon {
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #344b33;
-  }
-  
-  .socialIcon:hover {
-    color: #6c8b5a;
-  }
-   */
-
-
-
-
-
-
-
-
-
-
-   .contactPage {
+/* contact.module.css */
+.container {
   font-family: Arial, sans-serif;
-  background-color: #f8fbe6;
-  padding: 20px;
-  color: #344b33;
+  background-color: #FAFDF7;
+  color: #333;
+  padding: 2rem;
+  max-width: 1350px;
+  margin: auto;
 }
 
-/* Header and Contact Info Section */
-.headerSection {
+/* Header Content Wrapper */
+.headerContent {
   text-align: center;
-  margin-bottom: 40px;
-}
-
-.title {
-  font-size: 2.5rem;
+  background-color: #F6FBE9;
+  padding: 40px 20px;
+  border: 2px solid #E5F5BD;
+  border-radius: 8px;
+  margin-top: 40px;
   margin-bottom: 10px;
+
 }
 
-.description {
+/* Header Title (H1) */
+.headerTitle {
+  font-size: 2.5rem;
+  color: #1A3129;
+  margin-bottom: 10px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1px;
+}
+
+/* Header Description (P) */
+.headerDescription {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
+  color: #333333;
   margin-bottom: 30px;
+  margin: 0;
 }
 
-.contactInfo {
+/* Updated CSS for the contactMethods Section */
+.contactMethods {
   display: flex;
-  justify-content: space-around;
-  background-color: #abc9a0;
-  padding: 20px;
-  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #4F746A;
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 0 auto;
+  max-width: 1350px;
+  margin-bottom: 30px;
+  gap: var(--contact-card-gap,5.0rem); 
 }
 
-.infoCard {
+.contactCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  flex: 1;
-  padding: 10px;
-  color: #fff;
+  background-color: #375A4E;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 0.8rem;
 }
 
-.infoCard img {
+.icon {
+  width: 32px; /* Adjust the size as needed */
+  height: 32px; /* Ensure consistency */
+  margin-bottom: 0.5rem; /* Space between the icon and text */
+}
+
+.contactCard span {
+  font-size: 2rem;
   display: block;
-  width: 40px;
-  height: 40px;
-  margin: 0 auto 10px auto;
 }
 
-/* Form, Map, and Social Media Section */
-.formMapSection {
+.contactCard p {
+  font-size: 1rem;
+  color: white;
+  margin: 0;
+  font-weight: 500;
+}
+
+
+
+
+.formAndMap {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.contactForm {
+.form {
   flex: 1;
-  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #FAFDF7;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .inputGroup {
-  margin-bottom: 20px;
+  display: flex;
+  gap: 1rem;
 }
 
-.inputGroup label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.inputGroup input,
-.inputGroup textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #d9e2c2;
+.input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #CCC;
   border-radius: 5px;
-  background-color: #f8fbe6;
   font-size: 1rem;
 }
 
-.charLimit {
-  font-size: 0.8rem;
-  text-align: right;
-  color: #a0a0a0;
+.textarea {
+  padding: 0.8rem;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  resize: none;
+  height: 100px;
+  font-size: 1rem;
 }
 
 .submitButton {
-  width: 100%;
-  padding: 10px;
+  background-color: #4F746A;
+  color: white;
   border: none;
+  padding: 0.8rem;
   border-radius: 5px;
-  background-color: #6c8b5a;
-  color: #fff;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .submitButton:hover {
-  background-color: #5a7047;
+  background-color: #3e5f54;
 }
 
 .map {
   flex: 1;
+  background-color: #4F746A;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .mapPlaceholder {
-  width: 100%;
-  height: 100%;
-  background-color: #abc9a0;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 1.2rem;
+  height: 200px;
+  background-color: #333;
+  border-radius: 8px;
 }
 
-/* Social Media Icons */
-.socialMedia {
+.socialIcons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-.socialMedia img {
-  width: 40px;
-  height: 40px;
+.socialIcons span {
+  color: white;
+  font-size: 1.5rem;
   cursor: pointer;
+  transition: color 0.3s;
+}
+
+.socialIcons span:hover {
+  color: #b2d8cc;
 }

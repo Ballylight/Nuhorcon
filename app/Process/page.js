@@ -7,7 +7,7 @@ const Process = () => {
         <div className={styles.headerContent}>
           <h1 className={styles.headerTitle}>Pathway to a Healthier You</h1>
           <p className={styles.headerDescription}>
-            At PNgg Fitfam Solutions, we’re committed to guiding you every step of the way on your journey to health and
+            At Nuhorcon, we’re committed to guiding you every step of the way on your journey to health and
             wellness. With personalized nutrition plans and expert support, we help you take control of your well-being
             and embrace a balanced, fulfilling lifestyle.
           </p>
@@ -21,7 +21,7 @@ const Process = () => {
       <section className={styles.howItWorksSection}>
         <h2 className={styles.sectionHeading}>How It Works</h2>
         <p className={styles.sectionDescription}>
-          At PNgg Fitfam Solutions, we believe that achieving a healthier lifestyle should be simple, effective, and
+          At Nuhorcon, we believe that achieving a healthier lifestyle should be simple, effective, and
           sustainable. Our comprehensive approach combines expert nutrition guidance, fitness routines, and specially
           formulated herbal drinks to help you on your wellness journey. Follow these steps to get started.
         </p>
@@ -116,7 +116,7 @@ const Process = () => {
                         <h2 className={styles.footerHeading}>Celebrating Our Achievements</h2>
                         <p className={styles.footerDescription}>
                             While we take pride in our accomplishments, our greatest reward is witnessing our clients reach
-                            their health goals and thrive. Become a part of PNg Ftfam Solutions today and begin your own
+                            their health goals and thrive. Become a part of Nuhorcon Solutions today and begin your own
                             journey toward a healthier, happier you.
                         </p>
                     </div>

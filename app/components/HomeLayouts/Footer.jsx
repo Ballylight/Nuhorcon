@@ -18,7 +18,7 @@ export default function Footer(props){
             <div className={style.footertop}>
                 <div className={style.left}>
                     <Image src={logo} alt="logo" className={style.logo}></Image>
-                    <div className={style.text}>Pngfitfam</div>
+                    <div className={style.text}>Nuhorcon</div>
                 </div>
                 <div className={style.forcemaxwidth}>
                     <div className={style.links}>
@@ -33,12 +33,12 @@ export default function Footer(props){
             </div>
             <div className={style.footerbut}>
                 <div className={style.footerbleft}>
-                    <Bleftc icon = {""}>hello@squareup.com</Bleftc>
-                    <Bleftc icon = {""}>+91 91813 23 2309</Bleftc>
+                    <Bleftc icon = {""}>pngfitfam.com</Bleftc>
+                    <Bleftc icon = {""}>+2348094503658</Bleftc>
                     <Bleftc icon = {""}>Somewhere in the World</Bleftc>
                 </div>
                 <div className={style.bright}>
-                © 2023 Pngfitfam. All rights reserved.
+                © 2025 Nuhorcon. All rights reserved.
                 </div>
             </div>
         </Center>
