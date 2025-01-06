@@ -32,7 +32,7 @@ export default function NavBar(props) {
         <CLink className={style.link} href="/Process">Process</CLink>
         <CLink className={style.link} href="/Shop" >Shop</CLink>
         <CLink className={style.link} href="/Blog" >Blog</CLink>
-        <CLink className={mergeText(style.link, style.linkbutton)} >Contact Us</CLink>
+        <CLink className={mergeText(style.link, style.linkbutton)} href="/Contact" >Contact Us</CLink>
       </div>
     </div>
   </div>

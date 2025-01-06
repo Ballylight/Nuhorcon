@@ -7,8 +7,8 @@ function Features() {
     <section className={styles.achievements}>
       <div className={styles.achievementsHeader}>
         <h2 className={styles.achievementsTitle}>Features</h2>
-        <p className={styles.achievementsDescription}>
-          Welcome to the Feature Section of Nuhorcon’s Wellness Program, your ultimate destination for all things nutrition and health!</p>
+        {/* <p className={styles.achievementsDescription}>
+          Welcome to the Feature Section of Nuhorcon’s Wellness Program, your ultimate destination for all things nutrition and health!</p> */}
       </div>
 
       <div className={styles.cards}>
@@ -51,19 +51,19 @@ function Features() {
         <div className={styles.card}>
           <div className={styles.cardHeader}>
             <img src="/images/holistic-icon.png" alt="Research Icon" className={styles.cardIcon} />
-            <h3 className={styles.cardTitle}>Holistic Herbal Solutions</h3>
+            <h3 className={styles.cardTitle}>Nuhorcon Interiors</h3>
           </div>
           <p className={styles.cardText}>
-            Dr. Ngozi promotes the use of polyherbal mixes like Vernonia-Ocimum-Allium, which treat core organs to address multiple health issues simultaneously, such as diabetes, pain, and intestinal disorders.          </p>
+            Personalized designs that blend style and functionality, transforming your space to reflect your lifestyle, whether it's a cozy home or a modern office.          </p>
         </div>
 
         <div className={styles.card}>
           <div className={styles.cardHeader}>
             <img src="/images/community-centered-icon.png" alt="Research Icon" className={styles.cardIcon} />
-            <h3 className={styles.cardTitle}>Community-Centered Interventions</h3>
+            <h3 className={styles.cardTitle}>Nuhorcon Events</h3>
           </div>
           <p className={styles.cardText}>
-            Through her ongoing research on Obesity and Diabetes, Dr. Ngozi offers community interventions and counseling sessions, applying Nutritional Psychology to help individuals overcome health challenges and live healthier lives.          </p>
+            Expert event planning and flawless execution for corporate events, weddings, and celebrations, ensuring a seamless and memorable experience.               </p>
         </div>
 
         <div className={styles.card}>
@@ -82,7 +82,7 @@ function Features() {
             <h3 className={styles.cardTitle}>Analytical Labs</h3>
           </div>
           <p className={styles.cardText}>
-          Specializing in comprehensive biochemical and toxicological analyses, we provide reliable testing for various sample types and support scientific projects with precision and expertise.            </p>
+            Specializing in comprehensive biochemical and toxicological analyses, we provide reliable testing for various sample types and support scientific projects with precision and expertise.            </p>
         </div>
 
       </div>

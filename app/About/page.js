@@ -6,7 +6,7 @@ export default function About() {
             {/* Header Section */}
             <section className={styles.header}>
                 <div className={styles.headerContent}>
-                    <h1 className={styles.headerTitle}>About Nuhorcon Solutions</h1>
+                    <h1 className={styles.headerTitle}>About Nuhorcon </h1>
                     <p className={styles.headerDescription}>
                         Nuhorcon was established in June 2007 as a global resource company catering to client's interiordesign needs
                         over the years we have morphed into several channels including our academy, laboratory and book writing endeavours.
@@ -29,7 +29,7 @@ export default function About() {
                 <div className={styles.storySection}>
                     <div className={styles.storyItem}>
                         <img src="./images/birth-png-ftfam.svg" alt="Person exercising" className={styles.storyImage} />
-                        <h3 className={styles.storyItemTitle}>The Birth of Nuhorcon Solutions</h3>
+                        <h3 className={styles.storyItemTitle}>The Birth of PNgfitfam Solutions</h3>
                         <p className={styles.storyItemDescription}>
                             What began as Dr. Ngozi’s academic passion for nutrition and biochemistry
                             evolved into a full-fledged wellness movement. Inspired by her research and personal transformation, Dr. Ngozi set out to create a community that fosters healthy living through accessible, science-backed meal plans and fitness guidance.

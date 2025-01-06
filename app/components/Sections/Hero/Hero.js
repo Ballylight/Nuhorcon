@@ -1,4 +1,4 @@
-
+"use client"
 import styles from './hero.module.css';
 
 const Hero = () => {
@@ -17,18 +17,25 @@ const Hero = () => {
         {/* Right Section: Text Content */}
         <div className={styles.content}>
           <div className={styles.subHeadingContainer}>
-            <h5 className={styles.subHeading}>Transform Your Academic Experience with</h5>
+            <h5 className={styles.subHeading}>Transform Your Your World with</h5>
           </div>
           <h1 className={styles.heading}>Prof. Ngozi Awa Imaga, PhD</h1>
           <p className={styles.description}>
-          Meet Ngozi Awa Imaga, a Professor of Nutritional & Pharmacological Biochemistry at the University of Lagos with over 50 scholarly publications. She founded PNgfitfam, a wellness program offering bespoke meal plans and fitness regimens. Through her “Healthy Meal Swaps Plan” and the PNgfitfam Masterclass series, Prof. Ngozi helps people achieve lasting weight loss without fad diets. Having personally lost 20kg, she now shares her expertise in her book "Weightloss Secrets." Her research focuses on obesity, diabetes, and community health interventions. She has also authored 3 novels and is a creative writer with publications on Amazon.
-          Welcome to PNg's world!
+            Meet Ngozi Awa Imaga, a Professor of Nutritional & Pharmacological Biochemistry at the University of Lagos with over 50 scholarly publications. Her research focuses on obesity, diabetes, and community health interventions. She has also authored 3 novels and is a creative writer with publications on Amazon. Nu-hor-con Horizon concepts was established in 2007 as a global resource company with division in interiors, event planning and analytic labs, wellness in and fitfam
+            Welcome to PNg's world!
           </p>
 
           {/* Buttons */}
           <div className={styles.buttons}>
-            <button className={styles.viewBlogButton}>View Blog</button>
-            <button className={styles.contactButton}>Contact Us</button>
+            <button
+              className={styles.viewBlogButton}
+              onClick={() => window.location.href = '/Blog'} // Replace '/blog' with the actual path
+            >
+              View Blog
+            </button>
+
+            <button className={styles.contactButton}
+              onClick={() => window.location.href = '/Contact'}>Contact Us</button>
           </div>
 
           {/* Customer Info */}
