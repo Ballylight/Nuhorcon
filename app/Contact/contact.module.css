@@ -93,7 +93,7 @@
 
 .formAndMap {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 2rem;
  margin-top: 50px;
  margin-bottom: 40px;
@@ -117,7 +117,6 @@
 .inputGroup {
   display: flex;
   gap: 1rem;
-  
 }
 
 .input {
@@ -203,9 +202,6 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  /* justify-content: ; */
-  /* padding: 1.5rem; */
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
   gap: 10px; /* Add spacing between map and icons */
 }
 
@@ -229,4 +225,122 @@
 .socialIcon:hover {
   transform: scale(1.1);
   opacity: 0.8;
+}
+
+
+
+
+
+
+
+/* Base styles remain unchanged */
+
+/* For desktop (max-width: 1350px) */
+@media (max-width: 1350px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .headerTitle {
+    font-size: 2.3rem;
+  }
+
+  .contactMethods {
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .contactCard {
+    width: 180px;
+  }
+}
+
+/* For tablet landscape (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    padding: 1.2rem;
+  }
+
+  .headerContent {
+    padding: 30px 15px;
+  }
+
+  .headerTitle {
+    font-size: 2rem;
+  }
+
+  .formAndMap {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .contactMethods {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+}
+
+/* For tablet portrait (max-width: 768px) */
+@media (max-width: 768px) {
+  .headerContent {
+    padding: 20px 10px;
+  }
+
+  .headerTitle {
+    font-size: 1.8rem;
+  }
+
+  .contactCard {
+    /* width: 160px; */
+    padding: 1rem;
+  }
+
+  .formAndMap {
+    gap: 1.5rem;
+    padding: 30px;
+  }
+}
+
+/* For small devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .headerContent {
+    padding: 15px 8px;
+  }
+
+  .headerTitle {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  .contactCard {
+    /* width: 140px; */
+    padding: 0.8rem;
+    gap: 0.5rem;
+  }
+
+  .formAndMap {
+    padding: 20px;
+  }
+}
+
+/* For extra-small devices (max-width: 390px) */
+@media (max-width: 390px) {
+  .headerContent {
+    padding: 10px 5px;
+  }
+
+  .headerTitle {
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+  }
+
+  .contactCard {
+    width: 120px;
+    padding: 0.5rem;
+    gap: 0.3rem;
+  }
+
+  .formAndMap {
+    padding: 15px;
+  }
 }

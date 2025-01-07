@@ -36,7 +36,7 @@ export default function ContactPage() {
         });
 
         try {
-            await fetch("https://getform.io/f/awnndvlb", {
+            await fetch("https://formsubmit.co/543a9435e183029b4e4c3263321d6351", {
                 method: "POST",
                 body: submissionData
             });
