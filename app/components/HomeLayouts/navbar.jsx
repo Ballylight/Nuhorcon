@@ -1,6 +1,6 @@
 "use client";
 import style from "./navbar.module.css";
-import logo from "./assets/images/logo.png";
+import logo from "./assets/images/logo1.png";
 import Image from "next/image";
 import { Roboto } from "next/font/google";
 import { CButton, CLink, mergeText } from "../addons/addons";

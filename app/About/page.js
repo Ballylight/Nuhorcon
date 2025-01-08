@@ -1,3 +1,4 @@
+"use client";
 import styles from './about.module.css';
 
 export default function About() {
@@ -131,7 +132,16 @@ export default function About() {
                         </p>
                     </div>
                     <div className={styles.footerButtonContainer}>
-                        <button className={styles.contactButton}>Contact Us</button>
+                        {/* <button className={styles.contactButton}>Contact Us</button> */}
+
+                        <button
+                            className={styles.contactButton}
+                            onClick={() => window.location.href = '/Contact'} // Replace '/blog' with the actual path
+                        >
+                            Contact Us
+                        </button>
+
+
                     </div>
                 </div>
             </section>

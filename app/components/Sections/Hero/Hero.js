@@ -17,7 +17,7 @@ const Hero = () => {
         {/* Right Section: Text Content */}
         <div className={styles.content}>
           <div className={styles.subHeadingContainer}>
-            <h5 className={styles.subHeading}>Transform Your Your World with</h5>
+            <h5 className={styles.subHeading}>Transform Your World with</h5>
           </div>
           <h1 className={styles.heading}>Prof. Ngozi Awa Imaga, PhD</h1>
           <p className={styles.description}>
